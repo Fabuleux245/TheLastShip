@@ -862,6 +862,66 @@
 				}
 			],
 			"sid": 465773162557014
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Light Effect",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 751743500344055
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Enemy_Red",
+					"sid": 735634462797341,
+					"parameters": {
+						"object": "Light"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Enemy_Red",
+					"sid": 294737102895451,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "10"
+					}
+				}
+			],
+			"sid": 488404335751044
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Enemy_Red",
+					"sid": 170686081595820,
+					"parameters": {
+						"object": "Light"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Enemy_Red",
+					"sid": 764472107913539,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "50"
+					}
+				}
+			],
+			"sid": 918016219899541
 		}
 	],
 	"sid": 795246028417374
