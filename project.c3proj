@@ -110,7 +110,8 @@
 			"Transition",
 			"Text",
 			"Light",
-			"Batterybarre"
+			"Batterybarre",
+			"pile"
 		],
 		"subfolders": [
 			{

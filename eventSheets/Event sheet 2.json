@@ -787,6 +787,81 @@
 				}
 			],
 			"sid": 865576782063860
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Pickups",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 448787514981494,
+							"parameters": {
+								"object": "pile"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 634811290297111,
+							"parameters": {
+								"variable": "Battery",
+								"value": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "pile",
+							"sid": 103751497223278
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Light",
+							"sid": 630537067536781,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 301435291069625
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 262186724000690,
+							"parameters": {
+								"variable": "Battery",
+								"comparison": 4,
+								"value": "MaxBattery"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 342536963997598,
+							"parameters": {
+								"variable": "Battery",
+								"value": "MaxBattery"
+							}
+						}
+					],
+					"sid": 273496793350381
+				}
+			],
+			"sid": 465773162557014
 		}
 	],
 	"sid": 795246028417374
