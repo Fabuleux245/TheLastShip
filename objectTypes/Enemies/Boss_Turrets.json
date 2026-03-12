@@ -1,0 +1,66 @@
+{
+	"name": "Boss_Turrets",
+	"plugin-id": "Sprite",
+	"sid": 195328533384180,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 782720103344921
+		},
+		{
+			"name": "Side",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 294697397690807
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 157860352673359
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 224705595409586
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3,
+						"height": 3,
+						"originX": 0.666667,
+						"originY": 0.666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3533720,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 667906262032821,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

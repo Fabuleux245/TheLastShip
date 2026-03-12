@@ -1,0 +1,62 @@
+{
+	"name": "Generic_Controller",
+	"plugin-id": "Sprite",
+	"sid": 614895663391518,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "MusicFadeState",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 652468122637720
+		},
+		{
+			"name": "MusicVolume",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 665184057649209
+		},
+		{
+			"name": "MenuLock",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 854537956934908
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5880836,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 527221065571063,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

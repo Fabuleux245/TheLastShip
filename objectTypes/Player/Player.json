@@ -1,0 +1,193 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 143283885164430,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "HurtTimer",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 159046048468070
+		},
+		{
+			"name": "Hurt",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 895713297023054
+		},
+		{
+			"name": "BeamSide",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 502023478934907
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 392798242658965
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 820493342218601
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 47,
+						"height": 35,
+						"originX": 0.48936178723404256,
+						"originY": 0.5428574285714286,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7200858,
+						"collisionPoly": {
+							"points": [
+								0.6382978085106383,
+								0.6857144285714286,
+								0.36170219148936167,
+								0.6857144285714286,
+								0.36170219148936167,
+								0.3142854285714286,
+								0.6382978085106383,
+								0.3142854285714286
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Jets",
+								"x": 0.48936178723404256,
+								"y": 0.8285714285714286
+							},
+							{
+								"name": "GunLeft",
+								"x": 0.6170213829787234,
+								"y": 0.14285742857142855
+							},
+							{
+								"name": "GunRight",
+								"x": 0.38297861702127656,
+								"y": 0.14285742857142855
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 49,
+						"height": 35,
+						"originX": 0.510204,
+						"originY": 0.514286,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4974748,
+						"collisionPoly": {
+							"points": [
+								0.367347,
+								0.285714,
+								0.632653,
+								0.285714,
+								0.632653,
+								0.657143,
+								0.367347,
+								0.657143
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Jets",
+								"x": 0.530612,
+								"y": 0.8
+							},
+							{
+								"name": "GunLeft",
+								"x": 0.387755,
+								"y": 0.114286
+							},
+							{
+								"name": "GunRight",
+								"x": 0.612245,
+								"y": 0.114286
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 49,
+						"height": 35,
+						"originX": 0.510204,
+						"originY": 0.514286,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4624512,
+						"collisionPoly": {
+							"points": [
+								0.367347,
+								0.285714,
+								0.632653,
+								0.285714,
+								0.632653,
+								0.657143,
+								0.367347,
+								0.657143
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Jets",
+								"x": 0.469388,
+								"y": 0.8
+							},
+							{
+								"name": "GunLeft",
+								"x": 0.387755,
+								"y": 0.114286
+							},
+							{
+								"name": "GunRight",
+								"x": 0.612245,
+								"y": 0.114286
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 921440151733852,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

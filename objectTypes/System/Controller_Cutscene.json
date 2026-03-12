@@ -1,0 +1,55 @@
+{
+	"name": "Controller_Cutscene",
+	"plugin-id": "Sprite",
+	"sid": 798745718152010,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "Cutscene",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 486218739792080
+		},
+		{
+			"name": "Timer",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 977991326710827
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9843392,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 649542286272749,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

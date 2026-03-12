@@ -1,0 +1,93 @@
+{
+	"name": "Enemies",
+	"plugin-id": "Sprite",
+	"sid": 630157658788357,
+	"instanceVariables": [
+		{
+			"name": "Activated",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 582017803490715
+		},
+		{
+			"name": "Activation_Coordinate",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 554460307109725
+		},
+		{
+			"name": "Invulnerable",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 434483540344632
+		},
+		{
+			"name": "Shielded",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 409482119735748
+		},
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 125098711087684
+		},
+		{
+			"name": "Points",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 357470433227961
+		},
+		{
+			"name": "Dying",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 479722207256384
+		},
+		{
+			"name": "Debris_RGB",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 627801697960225
+		},
+		{
+			"name": "BigDeathSequence",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 206427735303690
+		},
+		{
+			"name": "DropsItems",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 758960577420638
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 863516306098676
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	],
+	"members": [
+		"Enemy_Red"
+	]
+}

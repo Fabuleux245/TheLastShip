@@ -1,0 +1,8 @@
+{
+	"name": "Data",
+	"plugin-id": "Dictionary",
+	"sid": 555446687356234,
+	"isGlobal": true,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": []
+}

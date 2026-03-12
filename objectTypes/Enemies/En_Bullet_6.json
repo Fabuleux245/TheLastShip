@@ -1,0 +1,105 @@
+{
+	"name": "En_Bullet_6",
+	"plugin-id": "Sprite",
+	"sid": 712450789877813,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 919464194441383
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 756277854938223
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.533333,
+						"originY": 0.533333,
+						"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\BundleGames\\Shmup\\Graphics\\bullets\\bullet_player_3.gif",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6616588,
+						"collisionPoly": {
+							"points": [
+								0.133333,
+								0.133333,
+								0.466667,
+								0,
+								0.866667,
+								0.133333,
+								1,
+								0.466667,
+								0.866667,
+								0.866667,
+								0.466667,
+								1,
+								0.133333,
+								0.866667,
+								0,
+								0.466667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.533333,
+						"originY": 0.533333,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9972585,
+						"collisionPoly": {
+							"points": [
+								0.133333,
+								0.133333,
+								0.466667,
+								0,
+								0.866667,
+								0.133333,
+								1,
+								0.466667,
+								0.866667,
+								0.866667,
+								0.466667,
+								1,
+								0.133333,
+								0.866667,
+								0,
+								0.466667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 477277890601618,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			}
+		],
+		"subfolders": []
+	}
+}

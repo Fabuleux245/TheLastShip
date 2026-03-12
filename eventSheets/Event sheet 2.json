@@ -1,0 +1,628 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mouv",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 443030486013568,
+							"parameters": {
+								"key": 68
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "Player",
+							"sid": 359574644640262,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "ViewportRight(\"Objects\") - 16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 390459216193430,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 548644264860384,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 236293157840385
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 844270150178034,
+							"parameters": {
+								"key": 81
+							}
+						},
+						{
+							"id": "compare-x",
+							"objectClass": "Player",
+							"sid": 965967815758504,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "ViewportLeft(\"Objects\") + 16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 902380513721314,
+							"parameters": {
+								"frame-number": "2"
+							}
+						},
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 967871661379605,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 358237378397037
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 522569828106544,
+							"parameters": {
+								"key": 90
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Player",
+							"sid": 306194567831384,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "ViewportTop(\"Objects\") + 16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 912764341277231,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "up"
+							}
+						}
+					],
+					"sid": 595715163183355
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 563119627152852,
+							"parameters": {
+								"key": 83
+							}
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "Player",
+							"sid": 106801109279114,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "ViewportBottom(\"Objects\") - 16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player",
+							"sid": 318169125455566,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"control": "down"
+							}
+						}
+					],
+					"sid": 268129606182905
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 947821804853077,
+							"parameters": {
+								"key": 68
+							},
+							"isInverted": true
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 909702926634756,
+							"parameters": {
+								"key": 81
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 794951961599363,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 482677282099235
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 350968313438195,
+							"parameters": {
+								"key": 68
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 734756738089985,
+							"parameters": {
+								"key": 81
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 520676560570653,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 741492131645942
+				}
+			],
+			"sid": 800825112529205
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 993896815454993,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [],
+			"sid": 645579247660485,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Normal Beam"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 760238485243607,
+							"parameters": {
+								"interval-seconds": "0.2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 617003927085057,
+							"parameters": {
+								"object-to-create": "Player_NormalBeam",
+								"layer": "\"Objects\"",
+								"x": "Player.ImagePointX(\"GunLeft\")",
+								"y": "Player.ImagePointY(\"GunLeft\")",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Player_NormalBeam",
+							"sid": 852308394110268,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "270"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 351267662829850,
+							"parameters": {
+								"object-to-create": "Player_NormalBeam",
+								"layer": "\"Objects\"",
+								"x": "Player.ImagePointX(\"GunRight\")",
+								"y": "Player.ImagePointY(\"GunRight\")",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Player_NormalBeam",
+							"sid": 325253494893440,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "270"
+							}
+						}
+					],
+					"sid": 264212403807078
+				},
+				{
+					"eventType": "comment",
+					"text": "Spread Beam"
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player_Bullets",
+					"sid": 764902201426205,
+					"parameters": {
+						"object": "Enemies"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemies",
+					"sid": 304339852844285
+				}
+			],
+			"sid": 142590318424394
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Red",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Enemy_Red",
+							"sid": 895655057917448,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "scrolly - Self.Activation_Coordinate - Self.Width/2"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Red",
+							"sid": 868068709755855,
+							"parameters": {
+								"instance-variable": "Activated"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Red",
+							"sid": 175043567340118,
+							"parameters": {
+								"instance-variable": "Dying"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Enemy_Red",
+							"sid": 967232168915084,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Enemy_Red",
+							"sid": 881807094769191,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemy_Red",
+							"sid": 553689709498294,
+							"parameters": {
+								"instance-variable": "Activated",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Enemy_Red",
+							"sid": 999747190077567,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 141306782427608
+				},
+				{
+					"eventType": "comment",
+					"text": ""
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-screen",
+							"objectClass": "Enemy_Red",
+							"sid": 147607241395528
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Red",
+							"sid": 743655011952001,
+							"parameters": {
+								"instance-variable": "Activated"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Enemy_Red",
+							"sid": 153494984056241,
+							"parameters": {
+								"instance-variable": "ShootTimer",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 314418672196169
+				},
+				{
+					"eventType": "comment",
+					"text": ""
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemy_Red",
+							"sid": 975954352730604,
+							"parameters": {
+								"instance-variable": "ShootTimer",
+								"comparison": 5,
+								"value": "1"
+							}
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 299039866997336,
+							"parameters": {
+								"object": "Enemy_Red"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 209686354617191,
+							"parameters": {
+								"instance-variable": "ShootTimer",
+								"value": "0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 263434596925459,
+							"parameters": {
+								"object-to-create": "En_Bullet_1",
+								"layer": "\"Objects\"",
+								"x": "Enemy_Red.ImagePointX(1)",
+								"y": "Enemy_Red.ImagePointY(1)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "En_Bullet_1",
+							"sid": 984651063494528,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(self.X,self.Y,Player.X,Player.Y)"
+							}
+						}
+					],
+					"sid": 103812882771845
+				}
+			],
+			"sid": 892183707759834
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 859759863806287
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Enemy_Red",
+					"sid": 568991353140056,
+					"parameters": {
+						"angle": "angle(Enemy_Red.X, Enemy_Red.Y, Player.X, Player.Y)"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Enemy_Red",
+					"sid": 835992016435935,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "angle(Enemy_Red.X, Enemy_Red.Y, Player.X, Player.Y)"
+					}
+				}
+			],
+			"sid": 742376299789008
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 589754592880572
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemies",
+					"sid": 902690302348262,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 719670403166073
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 442323231848320,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 408425676697768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy_Bullets",
+					"sid": 259095860371319,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 697619823794396,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 259723582339705
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "En_Asteroid",
+					"sid": 789275476865027,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 782424455058057,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 741326696544044
+		}
+	],
+	"sid": 795246028417374
+}

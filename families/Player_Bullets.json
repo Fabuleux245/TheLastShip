@@ -1,0 +1,28 @@
+{
+	"name": "Player_Bullets",
+	"plugin-id": "Sprite",
+	"sid": 990729095656883,
+	"instanceVariables": [
+		{
+			"name": "Strength",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 870398990676057
+		},
+		{
+			"name": "Destroyed",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 466786284070542
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Player_NormalBeam",
+		"Player_SineBeam",
+		"Player_SpreadBeam"
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"name": "En_Bullet_5",
+	"plugin-id": "Sprite",
+	"sid": 832189328823375,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 317407909650874
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 4,
+						"height": 22,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\BundleGames\\Shmup\\Graphics\\bullets\\bullet_enemy_5.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2363668,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.0454545,
+								0.5,
+								0,
+								0.75,
+								0.0454545,
+								1,
+								0.5,
+								0.75,
+								0.954545,
+								0.5,
+								1,
+								0.25,
+								0.954545,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 4,
+						"height": 22,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5687088,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.0454545,
+								0.5,
+								0,
+								0.75,
+								0.0454545,
+								1,
+								0.5,
+								0.75,
+								0.954545,
+								0.5,
+								1,
+								0.25,
+								0.954545,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 129460996358140,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 20
+			}
+		],
+		"subfolders": []
+	}
+}

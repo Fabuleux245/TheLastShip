@@ -1,0 +1,66 @@
+{
+	"name": "Player_NormalBeam",
+	"plugin-id": "Sprite",
+	"sid": 551939654654996,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 657743490762036
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 7,
+						"height": 17,
+						"originX": 0.571429,
+						"originY": 0.529412,
+						"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\BundleGames\\Shmup\\Graphics\\bullets\\bullet_player_1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9846922,
+						"collisionPoly": {
+							"points": [
+								0.142857,
+								0.0588235,
+								0.428571,
+								0,
+								0.857143,
+								0.0588235,
+								1,
+								0.470588,
+								0.714286,
+								0.882353,
+								0.428571,
+								1,
+								0.285714,
+								0.882353,
+								0,
+								0.470588
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 856237449562317,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
