@@ -2,6 +2,26 @@
 	"name": "Event sheet 2",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Battery",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 987371123679407
+		},
+		{
+			"eventType": "variable",
+			"name": "MaxBattery",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 636510255567757
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Mouv",
@@ -622,6 +642,151 @@
 				}
 			],
 			"sid": 741326696544044
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Light",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 341476314208725
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Light",
+							"sid": 811978287752871,
+							"parameters": {
+								"x": "Player.ImagePointX(\"LightPoint\")"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Light",
+							"sid": 731737433398631,
+							"parameters": {
+								"y": "Player.ImagePointY(\"LightPoint\")"
+							}
+						}
+					],
+					"sid": 363615072990009
+				}
+			],
+			"sid": 543932976389703
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Battery",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 712984724480374
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 850563036709825,
+							"parameters": {
+								"variable": "Battery",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 810505913114049
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 619773654153760,
+							"parameters": {
+								"variable": "Battery",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Light",
+							"sid": 812020994768683,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 923833058373326
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 367499494898355,
+							"parameters": {
+								"variable": "Battery",
+								"comparison": 2,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 102978610921926,
+							"parameters": {
+								"variable": "Battery",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 318242220848288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 859048536496914
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "Batterybarre",
+							"sid": 436589161753438,
+							"parameters": {
+								"width": "(Battery / MaxBattery) * 200"
+							}
+						}
+					],
+					"sid": 218262673133175
+				}
+			],
+			"sid": 865576782063860
 		}
 	],
 	"sid": 795246028417374

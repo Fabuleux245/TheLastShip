@@ -108,7 +108,9 @@
 			"Particle_Debris",
 			"Particle_Smoke",
 			"Transition",
-			"Text"
+			"Text",
+			"Light",
+			"Batterybarre"
 		],
 		"subfolders": [
 			{
