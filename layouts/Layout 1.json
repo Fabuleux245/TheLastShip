@@ -139,7 +139,7 @@
 						},
 						"Bullet": {
 							"properties": {
-								"speed": 37,
+								"speed": 100,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -299,7 +299,7 @@
 						},
 						"Bullet": {
 							"properties": {
-								"speed": 37,
+								"speed": 100,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -371,7 +371,7 @@
 						},
 						"Bullet": {
 							"properties": {
-								"speed": 37,
+								"speed": 100,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -643,7 +643,7 @@
 						},
 						"Bullet": {
 							"properties": {
-								"speed": 37,
+								"speed": 100,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,

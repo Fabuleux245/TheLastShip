@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "Battery",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "MaxBattery",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -914,10 +914,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Enemy_Red",
-					"sid": 764472107913539,
+					"sid": 827519558734904,
 					"behaviorType": "Bullet",
 					"parameters": {
-						"speed": "50"
+						"speed": "100"
 					}
 				}
 			],
