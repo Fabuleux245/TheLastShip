@@ -713,9 +713,7 @@
 					"uid": 24,
 					"sid": 945705860328503,
 					"tags": "",
-					"instanceVariables": {
-						"Strength": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
 							"properties": {
