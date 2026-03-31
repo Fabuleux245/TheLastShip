@@ -250,112 +250,6 @@
 			"sid": 800825112529205
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "key-is-down",
-					"objectClass": "Keyboard",
-					"sid": 993896815454993,
-					"parameters": {
-						"key": 32
-					}
-				}
-			],
-			"actions": [],
-			"sid": 645579247660485,
-			"children": [
-				{
-					"eventType": "comment",
-					"text": "Normal Beam"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 760238485243607,
-							"parameters": {
-								"interval-seconds": "0.2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 617003927085057,
-							"parameters": {
-								"object-to-create": "Player_NormalBeam",
-								"layer": "\"Objects\"",
-								"x": "Player.ImagePointX(\"GunLeft\")",
-								"y": "Player.ImagePointY(\"GunLeft\")",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "Player_NormalBeam",
-							"sid": 852308394110268,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"angle": "270"
-							}
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 351267662829850,
-							"parameters": {
-								"object-to-create": "Player_NormalBeam",
-								"layer": "\"Objects\"",
-								"x": "Player.ImagePointX(\"GunRight\")",
-								"y": "Player.ImagePointY(\"GunRight\")",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "Player_NormalBeam",
-							"sid": 325253494893440,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"angle": "270"
-							}
-						}
-					],
-					"sid": 264212403807078
-				},
-				{
-					"eventType": "comment",
-					"text": "Spread Beam"
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player_Bullets",
-					"sid": 764902201426205,
-					"parameters": {
-						"object": "Enemies"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Enemies",
-					"sid": 304339852844285
-				}
-			],
-			"sid": 142590318424394
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Red",
@@ -873,55 +767,181 @@
 			"sid": 751743500344055
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Shoot Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Enemy_Red",
-					"sid": 735634462797341,
-					"parameters": {
-						"object": "Light"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 657177804784129,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [],
+					"sid": 964721024938484,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Normal Beam"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 670765405182868,
+									"parameters": {
+										"interval-seconds": "0.2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 715570920685560,
+									"parameters": {
+										"object-to-create": "Player_NormalBeam",
+										"layer": "\"Objects\"",
+										"x": "Player.ImagePointX(\"GunLeft\")",
+										"y": "Player.ImagePointY(\"GunLeft\")",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Player_NormalBeam",
+									"sid": 891139262337323,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "270"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 609017971512362,
+									"parameters": {
+										"object-to-create": "Player_NormalBeam",
+										"layer": "\"Objects\"",
+										"x": "Player.ImagePointX(\"GunRight\")",
+										"y": "Player.ImagePointY(\"GunRight\")",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Player_NormalBeam",
+									"sid": 311861842300520,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "270"
+									}
+								}
+							],
+							"sid": 599961850446490
+						},
+						{
+							"eventType": "comment",
+							"text": "Spread Beam"
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player_Bullets",
+							"sid": 646433954296777,
+							"parameters": {
+								"object": "Enemies"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Enemies",
+							"sid": 700607943185456
+						}
+					],
+					"sid": 882034101814733
 				}
 			],
-			"actions": [
-				{
-					"id": "set-speed",
-					"objectClass": "Enemy_Red",
-					"sid": 294737102895451,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"speed": "10"
-					}
-				}
-			],
-			"sid": 488404335751044
+			"sid": 933396571696752
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Shoot ennemie",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Enemy_Red",
-					"sid": 170686081595820,
-					"parameters": {
-						"object": "Light"
-					},
-					"isInverted": true
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Enemy_Red",
+							"sid": 403866110541477,
+							"parameters": {
+								"object": "Light"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Enemy_Red",
+							"sid": 566340112474263,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "10"
+							}
+						}
+					],
+					"sid": 629324374393045
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Enemy_Red",
+							"sid": 916423009336299,
+							"parameters": {
+								"object": "Light"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Enemy_Red",
+							"sid": 698414786206611,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "100"
+							}
+						}
+					],
+					"sid": 878411721055019
 				}
 			],
-			"actions": [
-				{
-					"id": "set-speed",
-					"objectClass": "Enemy_Red",
-					"sid": 827519558734904,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"speed": "100"
-					}
-				}
-			],
-			"sid": 918016219899541
+			"sid": 751238856677087
 		}
 	],
 	"sid": 795246028417374
