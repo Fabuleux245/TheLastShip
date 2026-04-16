@@ -554,6 +554,77 @@
 						}
 					],
 					"sid": 363615072990009
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 376370028613978
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Light",
+							"sid": 180294440028871,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 654010848746453
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 561977656850202,
+							"parameters": {
+								"key": 66
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Light",
+							"sid": 536897729936508,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 482542116673172,
+							"parameters": {
+								"variable": "Battery",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 529087188355237,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Light",
+							"sid": 201726100979275,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 467683743962012
 				}
 			],
 			"sid": 543932976389703
@@ -604,10 +675,10 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 850563036709825,
+							"sid": 604614419751298,
 							"parameters": {
 								"variable": "Battery",
-								"value": "dt"
+								"value": "dt*0.2"
 							}
 						}
 					],
@@ -927,8 +998,8 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Enemy_Red",
-							"sid": 916423009336299,
+							"objectClass": "Enemy_Bullets",
+							"sid": 238490971937956,
 							"parameters": {
 								"object": "Light"
 							},
@@ -937,13 +1008,9 @@
 					],
 					"actions": [
 						{
-							"id": "set-speed",
-							"objectClass": "Enemy_Red",
-							"sid": 698414786206611,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "100"
-							}
+							"id": "destroy",
+							"objectClass": "Enemy_Bullets",
+							"sid": 608115633389394
 						}
 					],
 					"sid": 878411721055019
