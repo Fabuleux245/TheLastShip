@@ -289,12 +289,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-enabled",
+							"id": "set-speed",
 							"objectClass": "Enemy_Red",
-							"sid": 881807094769191,
+							"sid": 657210996349454,
 							"behaviorType": "Bullet",
 							"parameters": {
-								"state": "disabled"
+								"speed": "0"
 							}
 						},
 						{
@@ -361,11 +361,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Enemy_Red",
-							"sid": 975954352730604,
+							"sid": 868721647735804,
 							"parameters": {
 								"instance-variable": "ShootTimer",
 								"comparison": 5,
-								"value": "1"
+								"value": "2.5"
 							}
 						},
 						{
@@ -403,10 +403,10 @@
 						{
 							"id": "set-angle-of-motion",
 							"objectClass": "En_Bullet_1",
-							"sid": 984651063494528,
+							"sid": 512018153191253,
 							"behaviorType": "Bullet",
 							"parameters": {
-								"angle": "angle(self.X,self.Y,Player.X,Player.Y)"
+								"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
 							}
 						}
 					],
@@ -565,6 +565,32 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 922788146360246,
+							"parameters": {
+								"variable": "Battery",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 752180482528590,
+							"parameters": {
+								"layout": "Layout 3"
+							}
+						}
+					],
+					"sid": 532858393701499
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -867,11 +893,85 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Dasher",
-			"description": "Ennemi qui avance vers le joueur, s'arrete 1s, puis dash",
+			"title": "Shoot ennemie",
+			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Enemy_Red",
+							"sid": 403866110541477,
+							"parameters": {
+								"object": "Light"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Enemy_Red",
+							"sid": 566340112474263,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "10"
+							}
+						}
+					],
+					"sid": 629324374393045
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Enemy_Red",
+							"sid": 916423009336299,
+							"parameters": {
+								"object": "Light"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Enemy_Red",
+							"sid": 698414786206611,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "100"
+							}
+						}
+					],
+					"sid": 878411721055019
+				}
+			],
 			"sid": 751238856677087
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 698063709455319
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Enemies",
+					"sid": 790206062212995,
+					"parameters": {
+						"instance-variable": "Activated",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 962345854900430
 		}
 	],
 	"sid": 795246028417374
