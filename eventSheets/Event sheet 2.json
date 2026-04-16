@@ -289,21 +289,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-angle-of-motion",
-							"objectClass": "Enemy_Red",
-							"sid": 967232168915084,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"angle": "90"
-							}
-						},
-						{
 							"id": "set-enabled",
 							"objectClass": "Enemy_Red",
 							"sid": 881807094769191,
 							"behaviorType": "Bullet",
 							"parameters": {
-								"state": "enabled"
+								"state": "disabled"
 							}
 						},
 						{
@@ -438,15 +429,6 @@
 					"id": "set-angle",
 					"objectClass": "Enemy_Red",
 					"sid": 568991353140056,
-					"parameters": {
-						"angle": "angle(Enemy_Red.X, Enemy_Red.Y, Player.X, Player.Y)"
-					}
-				},
-				{
-					"id": "set-angle-of-motion",
-					"objectClass": "Enemy_Red",
-					"sid": 835992016435935,
-					"behaviorType": "Bullet",
 					"parameters": {
 						"angle": "angle(Enemy_Red.X, Enemy_Red.Y, Player.X, Player.Y)"
 					}
@@ -885,62 +867,10 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Shoot ennemie",
-			"description": "",
+			"title": "Dasher",
+			"description": "Ennemi qui avance vers le joueur, s'arrete 1s, puis dash",
 			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Enemy_Red",
-							"sid": 403866110541477,
-							"parameters": {
-								"object": "Light"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-speed",
-							"objectClass": "Enemy_Red",
-							"sid": 566340112474263,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "10"
-							}
-						}
-					],
-					"sid": 629324374393045
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Enemy_Red",
-							"sid": 916423009336299,
-							"parameters": {
-								"object": "Light"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-speed",
-							"objectClass": "Enemy_Red",
-							"sid": 698414786206611,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "100"
-							}
-						}
-					],
-					"sid": 878411721055019
-				}
-			],
+			"children": [],
 			"sid": 751238856677087
 		}
 	],
