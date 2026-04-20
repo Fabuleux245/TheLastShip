@@ -171,7 +171,10 @@
 		"items": [
 			"Layout 1",
 			"Layout 2",
-			"Layout 3"
+			"Layout 3",
+			"Niveau 1",
+			"Niveau 2",
+			"Niveau 3"
 		],
 		"subfolders": []
 	},
