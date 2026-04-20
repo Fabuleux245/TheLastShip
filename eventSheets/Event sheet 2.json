@@ -361,11 +361,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Enemy_Red",
-							"sid": 529558973809857,
+							"sid": 868721647735804,
 							"parameters": {
 								"instance-variable": "ShootTimer",
 								"comparison": 5,
-								"value": "1.5"
+								"value": "2.5"
 							}
 						},
 						{
@@ -806,9 +806,9 @@
 								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 129409532869415,
+									"sid": 670765405182868,
 									"parameters": {
-										"interval-seconds": "0.4"
+										"interval-seconds": "0.2"
 									}
 								}
 							],
@@ -883,35 +883,9 @@
 							"id": "destroy",
 							"objectClass": "Enemies",
 							"sid": 700607943185456
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Player_Bullets",
-							"sid": 250105776204687
 						}
 					],
 					"sid": 882034101814733
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player_Bullets",
-							"sid": 652754827127441,
-							"parameters": {
-								"object": "En_Asteroid"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "Player_Bullets",
-							"sid": 777198441912019
-						}
-					],
-					"sid": 454075933920088
 				}
 			],
 			"sid": 933396571696752
