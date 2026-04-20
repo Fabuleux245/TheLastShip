@@ -16,14 +16,14 @@
 		{
 			"type": "plugin",
 			"id": "Dictionary",
-			"name": "Dictionnaire",
+			"name": "Dictionary",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Clavier",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -37,63 +37,63 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texte",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Bullet",
-			"name": "Projectile",
+			"name": "Bullet",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "EightDir",
-			"name": "8 Directions",
+			"name": "8 Direction",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Flash",
-			"name": "Clignotement",
+			"name": "Flash",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Pin",
-			"name": "Epingle",
+			"name": "Pin",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Sin",
-			"name": "Sinus",
+			"name": "Sine",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "wrap",
-			"name": "Enrouler",
+			"name": "Wrap",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "brightness",
-			"name": "Luminosité",
+			"name": "Brightness",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "effect",
 			"id": "tint",
-			"name": "Teindre",
+			"name": "Tint",
 			"author": "Scirra",
 			"bundled": false
 		}
