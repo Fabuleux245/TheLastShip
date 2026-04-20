@@ -299,12 +299,12 @@
 					],
 					"actions": [
 						{
-							"id": "set-speed",
+							"id": "set-enabled",
 							"objectClass": "Enemy_Red",
-							"sid": 657210996349454,
+							"sid": 881807094769191,
 							"behaviorType": "Bullet",
 							"parameters": {
-								"speed": "0"
+								"state": "disabled"
 							}
 						},
 						{
@@ -371,11 +371,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Enemy_Red",
-							"sid": 868721647735804,
+							"sid": 975954352730604,
 							"parameters": {
 								"instance-variable": "ShootTimer",
 								"comparison": 5,
-								"value": "2.5"
+								"value": "1"
 							}
 						},
 						{
@@ -413,10 +413,10 @@
 						{
 							"id": "set-angle-of-motion",
 							"objectClass": "En_Bullet_1",
-							"sid": 512018153191253,
+							"sid": 984651063494528,
 							"behaviorType": "Bullet",
 							"parameters": {
-								"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+								"angle": "angle(self.X,self.Y,Player.X,Player.Y)"
 							}
 						}
 					],
@@ -712,32 +712,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 922788146360246,
-							"parameters": {
-								"variable": "Battery",
-								"comparison": 3,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 752180482528590,
-							"parameters": {
-								"layout": "Layout 3"
-							}
-						}
-					],
-					"sid": 532858393701499
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "every-tick",
 							"objectClass": "System",
 							"sid": 712984724480374
@@ -1028,9 +1002,10 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Shoot ennemie",
-			"description": "",
+			"title": "Dasher",
+			"description": "Ennemi qui avance vers le joueur, s'arrete 1s, puis dash",
 			"isActiveOnStart": true,
+<<<<<<< HEAD
 			"children": [
 				{
 					"eventType": "block",
@@ -1079,29 +1054,10 @@
 					"sid": 878411721055019
 				}
 			],
+=======
+			"children": [],
+>>>>>>> parent of 788dd53 (active enemies on start of layout)
 			"sid": 751238856677087
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 698063709455319
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "Enemies",
-					"sid": 790206062212995,
-					"parameters": {
-						"instance-variable": "Activated",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 962345854900430
 		}
 	],
 	"sid": 795246028417374
