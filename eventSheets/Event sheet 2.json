@@ -22,6 +22,16 @@
 			"sid": 636510255567757
 		},
 		{
+			"eventType": "variable",
+			"name": "FlashActive",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 405581319177279
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Mouv",
@@ -554,6 +564,139 @@
 						}
 					],
 					"sid": 363615072990009
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 376370028613978
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Light",
+							"sid": 180294440028871,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Light",
+							"sid": 923238662765852,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 654010848746453
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 561977656850202,
+							"parameters": {
+								"key": 66
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 415330472530569,
+							"parameters": {
+								"variable": "FlashActive",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 965556754797717,
+							"parameters": {
+								"variable": "Battery",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 109645364463934,
+							"parameters": {
+								"variable": "FlashActive",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Light",
+							"sid": 244494147200662,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Light",
+							"sid": 315318211411000,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 482542116673172,
+							"parameters": {
+								"variable": "Battery",
+								"value": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 529087188355237,
+							"parameters": {
+								"seconds": "1.0",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Light",
+							"sid": 807704847229849,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 350569241662539,
+							"parameters": {
+								"variable": "FlashActive",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Light",
+							"sid": 174449786985860,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 467683743962012
 				}
 			],
 			"sid": 543932976389703
@@ -604,10 +747,10 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 850563036709825,
+							"sid": 604614419751298,
 							"parameters": {
 								"variable": "Battery",
-								"value": "dt"
+								"value": "dt*0.2"
 							}
 						}
 					],
@@ -723,14 +866,6 @@
 							"id": "destroy",
 							"objectClass": "pile",
 							"sid": 103751497223278
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Light",
-							"sid": 630537067536781,
-							"parameters": {
-								"visibility": "visible"
-							}
 						}
 					],
 					"sid": 301435291069625
@@ -926,24 +1061,19 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Enemy_Red",
-							"sid": 916423009336299,
+							"id": "on-collision-with-another-object",
+							"objectClass": "Light",
+							"sid": 801641479567467,
 							"parameters": {
-								"object": "Light"
-							},
-							"isInverted": true
+								"object": "Enemy_Bullets"
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-speed",
-							"objectClass": "Enemy_Red",
-							"sid": 698414786206611,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "100"
-							}
+							"id": "destroy",
+							"objectClass": "Enemy_Bullets",
+							"sid": 608115633389394
 						}
 					],
 					"sid": 878411721055019
