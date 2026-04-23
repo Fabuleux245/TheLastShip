@@ -442,6 +442,14 @@
 					"parameters": {
 						"angle": "angle(Enemy_Red.X, Enemy_Red.Y, Player.X, Player.Y)"
 					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Enemy_Blue",
+					"sid": 365450749254681,
+					"parameters": {
+						"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+					}
 				}
 			],
 			"sid": 742376299789008
@@ -1102,6 +1110,144 @@
 				}
 			],
 			"sid": 962345854900430
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy_Blue",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Enemy_Blue",
+							"sid": 720408617695999,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "ScrollY - Self.Activation_Coordinate - Self.Width/2"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 453631061914576,
+							"parameters": {
+								"instance-variable": "Activated"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 463070376402850,
+							"parameters": {
+								"instance-variable": "Dying"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Enemy_Blue",
+							"sid": 237434976844074,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Self.NormalSpeed"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemy_Blue",
+							"sid": 534894172582535,
+							"parameters": {
+								"instance-variable": "Activated",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Enemy_Blue",
+							"sid": 264855450490042,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Enemy_Blue",
+							"sid": 958960871014269,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+							}
+						}
+					],
+					"sid": 843198222441092
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 753257713666989,
+							"parameters": {
+								"instance-variable": "Activated"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 175455570623276,
+							"parameters": {
+								"instance-variable": "Dying"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 937017874594439,
+							"parameters": {
+								"instance-variable": "IsDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Enemy_Blue",
+							"sid": 716591475018252,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Enemy_Blue",
+							"sid": 983817879831754,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Self.NormalSpeed"
+							}
+						}
+					],
+					"sid": 177097604591916
+				}
+			],
+			"sid": 343998179936646
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 870694512094853
 		}
 	],
 	"sid": 795246028417374

@@ -88,6 +88,7 @@
 		}
 	],
 	"members": [
-		"Enemy_Red"
+		"Enemy_Red",
+		"Enemy_Blue"
 	]
 }

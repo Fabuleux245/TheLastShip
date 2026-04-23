@@ -1,0 +1,121 @@
+{
+	"name": "Enemy_Blue",
+	"plugin-id": "Sprite",
+	"sid": 530722316606239,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "DashTimer",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 599287166708566
+		},
+		{
+			"name": "IsDashing",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 780462195837811
+		},
+		{
+			"name": "NormalSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 915894750545865
+		},
+		{
+			"name": "DashSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 770327494568051
+		},
+		{
+			"name": "DashDuration",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 164127726077257
+		},
+		{
+			"name": "DashCooldown",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 769473980646959
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 843492419446200
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3650817,
+						"collisionPoly": {
+							"points": [
+								0.45,
+								0,
+								0.73,
+								0,
+								0.76,
+								0.03,
+								0.76,
+								0.61,
+								0.73,
+								0.77,
+								0.71,
+								0.83,
+								0.66,
+								0.92,
+								0.61,
+								0.97,
+								0.54,
+								1,
+								0.43,
+								0.99,
+								0.39,
+								0.97,
+								0.3,
+								0.88,
+								0.26,
+								0.72,
+								0.28,
+								0.01
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 858775595543208,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
