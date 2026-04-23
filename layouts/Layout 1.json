@@ -683,6 +683,83 @@
 						"z": 0,
 						"angle": 2.6862846353178957
 					}
+				},
+				{
+					"type": "Enemy_Blue",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 36,
+					"sid": 996496697052421,
+					"tags": "",
+					"instanceVariables": {
+						"Activated": false,
+						"Activation_Coordinate": 0,
+						"Invulnerable": false,
+						"Shielded": false,
+						"Health": 0,
+						"Points": 0,
+						"Dying": false,
+						"Debris_RGB": "",
+						"BigDeathSequence": false,
+						"DropsItems": false,
+						"DashTimer": 0,
+						"IsDashing": false,
+						"NormalSpeed": 30,
+						"DashSpeed": 400,
+						"DashDuration": 0.5,
+						"DashCooldown": 2
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 996496697052421,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 48.61550521850586,
+						"y": 240.4755096435547,
+						"width": 66.25883170961923,
+						"height": 61.41666926129942,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 5.89762120219132
+					}
 				}
 			],
 			"sid": 463078889671682,
@@ -782,10 +859,10 @@
 						"DropsItems": false,
 						"DashTimer": 0,
 						"IsDashing": false,
-						"NormalSpeed": 80,
+						"NormalSpeed": 30,
 						"DashSpeed": 400,
-						"DashDuration": 0.3,
-						"DashCooldown": 5
+						"DashDuration": 0.5,
+						"DashCooldown": 2
 					},
 					"behaviors": {
 						"Flash": {
@@ -818,8 +895,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 96.41829573814064,
-						"y": 291.60415796384626,
+						"x": 240.47204268786464,
+						"y": 161.21068012142356,
 						"width": 66.25883170961923,
 						"height": 61.41666926129942,
 						"originX": 0.5,
@@ -831,7 +908,7 @@
 							1
 						],
 						"z": 0,
-						"angle": 5.826430953604837
+						"angle": 0.34615927704471794
 					}
 				}
 			],

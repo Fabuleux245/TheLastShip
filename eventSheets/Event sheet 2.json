@@ -1239,6 +1239,129 @@
 						}
 					],
 					"sid": 177097604591916
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 414700363074967,
+							"parameters": {
+								"instance-variable": "Activated"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 357458357095175,
+							"parameters": {
+								"instance-variable": "Dying"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Enemy_Blue",
+							"sid": 596130989143377,
+							"parameters": {
+								"instance-variable": "DashTimer",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 361507686198699
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 109617073913813,
+							"parameters": {
+								"instance-variable": "Activated"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemy_Blue",
+							"sid": 812449092320712,
+							"parameters": {
+								"instance-variable": "DashTimer",
+								"comparison": 5,
+								"value": "Self.DashCooldown"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Blue",
+							"sid": 900775147231812,
+							"parameters": {
+								"instance-variable": "IsDashing"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemy_Blue",
+							"sid": 408796790956677,
+							"parameters": {
+								"instance-variable": "IsDashing",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Blue",
+							"sid": 341865978819145,
+							"parameters": {
+								"instance-variable": "DashTimer",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Enemy_Blue",
+							"sid": 365195662989314,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Enemy_Blue",
+							"sid": 808306375325786,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Self.DashSpeed"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 522826694744668,
+							"parameters": {
+								"seconds": "Enemy_Blue.DashDuration",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemy_Blue",
+							"sid": 162369634381237,
+							"parameters": {
+								"instance-variable": "IsDashing",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 581999513442707
 				}
 			],
 			"sid": 343998179936646
