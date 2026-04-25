@@ -1,0 +1,95 @@
+{
+	"name": "Enemy_Red2",
+	"plugin-id": "Sprite",
+	"sid": 228583173453709,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ShootTimer",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 756191076016738
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 238229653874036
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 46,
+						"originX": 0.5084286594855623,
+						"originY": 0.4758824420542343,
+						"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\BundleGames\\Shmup\\Graphics\\enemies\\small_1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3195035,
+						"collisionPoly": {
+							"points": [
+								0.7651256605071427,
+								0,
+								1,
+								0.030495379487956352,
+								1,
+								0.15647629147098926,
+								1,
+								0.9205423420693835,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								0.17224786484700538,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								0.8944218977985791,
+								0.008456722855294477,
+								0.15647629147098926,
+								0.17455478233984642,
+								0.028859263747916964
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Imagepoint 1",
+								"x": 0.8372709801258162,
+								"y": 1.313573887108014
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 443762560002338,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
