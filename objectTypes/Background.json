@@ -4,8 +4,22 @@
 	"sid": 708634817551237,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "ScrollSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 917209900309863
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 350997289918223
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -14,8 +28,8 @@
 					{
 						"width": 360,
 						"height": 480,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\BundleGames\\Shmup\\Graphics\\background\\space.png",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

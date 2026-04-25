@@ -446,9 +446,9 @@
 				{
 					"id": "set-angle",
 					"objectClass": "Enemy_Blue",
-					"sid": 365450749254681,
+					"sid": 744013258891503,
 					"parameters": {
-						"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+						"angle": "angle(Self.X, Self.Y, Player.X, Player.Y) - 90"
 					}
 				}
 			],
@@ -949,9 +949,9 @@
 								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 670765405182868,
+									"sid": 800108825035205,
 									"parameters": {
-										"interval-seconds": "0.2"
+										"interval-seconds": "0.35"
 									}
 								}
 							],
@@ -1026,6 +1026,11 @@
 							"id": "destroy",
 							"objectClass": "Enemies",
 							"sid": 700607943185456
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Player_Bullets",
+							"sid": 558896504946266
 						}
 					],
 					"sid": 882034101814733
@@ -1371,6 +1376,146 @@
 			"conditions": [],
 			"actions": [],
 			"sid": 870694512094853
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Background",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 880154332805694
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Background",
+							"sid": 463533237719943,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Self.ScrollSpeed"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Background",
+							"sid": 690147990395620,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "90"
+							}
+						}
+					],
+					"sid": 924760257125379
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Background",
+							"sid": 177789203137560,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "LayoutHeight + Self.Height / 2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Background",
+							"sid": 950678398541857,
+							"parameters": {
+								"y": "Self.Y - Self.Height * 2"
+							}
+						}
+					],
+					"sid": 767176230806145
+				}
+			],
+			"sid": 299946714515680
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Asteroide",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player_Bullets",
+							"sid": 986225226042913,
+							"parameters": {
+								"object": "En_Asteroid"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player_Bullets",
+							"sid": 548625778603467
+						}
+					],
+					"sid": 882938525016393
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "En_Asteroid",
+							"sid": 401638104060065
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "En_Asteroid",
+							"sid": 650252113766421,
+							"parameters": {
+								"instance-variable": "RotateDirection",
+								"value": "random(-60, 60)"
+							}
+						}
+					],
+					"sid": 418288719053135
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 939079442210052
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-clockwise",
+							"objectClass": "En_Asteroid",
+							"sid": 337208884622812,
+							"parameters": {
+								"degrees": "Self.RotateDirection * dt"
+							}
+						}
+					],
+					"sid": 806537794841139
+				}
+			],
+			"sid": 195577388869115
 		}
 	],
 	"sid": 795246028417374

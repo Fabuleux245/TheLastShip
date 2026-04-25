@@ -170,7 +170,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1",
+			"NIveau1",
+			"Niveau2",
 			"Layout 2",
 			"Layout 3"
 		],
