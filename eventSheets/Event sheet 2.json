@@ -371,11 +371,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Enemy_Red",
-							"sid": 868721647735804,
+							"sid": 696015783483271,
 							"parameters": {
 								"instance-variable": "ShootTimer",
 								"comparison": 5,
-								"value": "2.5"
+								"value": "2"
 							}
 						},
 						{
@@ -400,12 +400,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 263434596925459,
+							"sid": 732512195369602,
 							"parameters": {
 								"object-to-create": "En_Bullet_1",
 								"layer": "\"Objects\"",
-								"x": "Enemy_Red.ImagePointX(1)",
-								"y": "Enemy_Red.ImagePointY(1)",
+								"x": "Enemy_Red.ImagePointX(\"ShootPoint\")",
+								"y": "Enemy_Red.ImagePointY(\"ShootPoint\")",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -413,14 +413,62 @@
 						{
 							"id": "set-angle-of-motion",
 							"objectClass": "En_Bullet_1",
-							"sid": 512018153191253,
+							"sid": 216024017213081,
 							"behaviorType": "Bullet",
 							"parameters": {
-								"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
+								"angle": "90"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "En_Bullet_1",
+							"sid": 495455046566010,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "300"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 913344826275230,
+							"parameters": {
+								"instance-variable": "ShootTimer",
+								"value": "0"
 							}
 						}
 					],
 					"sid": 103812882771845
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 203811649317477
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 689473644505402,
+							"parameters": {
+								"object": "Enemy_Red"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 270916240562812,
+							"parameters": {
+								"instance-variable": "ShootTimer",
+								"value": "random(0, 2.5)"
+							}
+						}
+					],
+					"sid": 428465224911719
 				}
 			],
 			"sid": 892183707759834
