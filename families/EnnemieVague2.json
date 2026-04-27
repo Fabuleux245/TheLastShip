@@ -1,0 +1,11 @@
+{
+	"name": "EnnemieVague2",
+	"plugin-id": "Sprite",
+	"sid": 587390031242432,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Enemy_Red2"
+	]
+}
