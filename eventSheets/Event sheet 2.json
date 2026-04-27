@@ -389,14 +389,23 @@
 					],
 					"actions": [
 						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 209686354617191,
+							"parameters": {
+								"instance-variable": "ShootTimer",
+								"value": "0"
+							}
+						},
+						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 341818742049371,
+							"sid": 263434596925459,
 							"parameters": {
 								"object-to-create": "En_Bullet_1",
-								"layer": "0",
-								"x": "Enemy_Red.ImagePointX(\"ShootPoint\")",
-								"y": "Enemy_Red.ImagePointY(\"ShootPoint\")",
+								"layer": "\"Objects\"",
+								"x": "Enemy_Red.ImagePointX(1)",
+								"y": "Enemy_Red.ImagePointY(1)",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -404,54 +413,14 @@
 						{
 							"id": "set-angle-of-motion",
 							"objectClass": "En_Bullet_1",
-							"sid": 772184973029900,
+							"sid": 512018153191253,
 							"behaviorType": "Bullet",
 							"parameters": {
-								"angle": "90"
-							}
-						},
-						{
-							"id": "set-speed",
-							"objectClass": "En_Bullet_1",
-							"sid": 957528509672663,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "250"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Enemy_Red",
-							"sid": 550054765028601,
-							"parameters": {
-								"instance-variable": "ShootTimer",
-								"value": "0"
+								"angle": "angle(Self.X, Self.Y, Player.X, Player.Y)"
 							}
 						}
 					],
 					"sid": 103812882771845
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 199198028324009
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Enemy_Red",
-							"sid": 320806644413280,
-							"parameters": {
-								"instance-variable": "ShootTimer",
-								"value": "random(0, 2.5)"
-							}
-						}
-					],
-					"sid": 734370378781785
 				}
 			],
 			"sid": 892183707759834
