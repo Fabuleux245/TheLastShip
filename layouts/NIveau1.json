@@ -265,8 +265,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 270.80454272319014,
-						"y": 112.41705277713436,
+						"x": 314,
+						"y": 118,
 						"width": 43.88639197326372,
 						"height": 50.1958127534542,
 						"originX": 0.5084286594855623,
@@ -388,8 +388,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 159,
-						"y": 114,
+						"x": 244,
+						"y": 105,
 						"width": 45.092033775468344,
 						"height": 50.1958127534542,
 						"originX": 0.5084286594855623,
@@ -460,8 +460,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 317,
-						"y": 196,
+						"x": 322,
+						"y": 184,
 						"width": 43.88639197326372,
 						"height": 50.1958127534542,
 						"originX": 0.5084286594855623,
@@ -732,8 +732,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 74,
-						"y": 196,
+						"x": 78,
+						"y": 191,
 						"width": 43.88639197326372,
 						"height": 50.1958127534542,
 						"originX": 0.5084286594855623,
@@ -882,8 +882,157 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 191,
-						"y": 189,
+						"x": 29,
+						"y": 70,
+						"width": 66.25883170961923,
+						"height": 61.41666926129942,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0.34615927704471794
+					}
+				},
+				{
+					"type": "Enemy_Red",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 36,
+					"sid": 262545481028051,
+					"tags": "",
+					"instanceVariables": {
+						"Activated": false,
+						"Activation_Coordinate": 0,
+						"Invulnerable": false,
+						"Shielded": false,
+						"Health": 0,
+						"Points": 0,
+						"Dying": false,
+						"Debris_RGB": "",
+						"BigDeathSequence": false,
+						"DropsItems": false,
+						"ShootTimer": 0
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 262545481028051,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 110,
+						"y": 144,
+						"width": 45.092033775468344,
+						"height": 50.1958127534542,
+						"originX": 0.5084286594855623,
+						"originY": 0.4758824420542343,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 6.018651619383242
+					}
+				},
+				{
+					"type": "Enemy_Blue",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 62,
+					"sid": 124559243137330,
+					"tags": "",
+					"instanceVariables": {
+						"Activated": false,
+						"Activation_Coordinate": 0,
+						"Invulnerable": false,
+						"Shielded": false,
+						"Health": 0,
+						"Points": 0,
+						"Dying": false,
+						"Debris_RGB": "",
+						"BigDeathSequence": false,
+						"DropsItems": false,
+						"DashTimer": 0,
+						"IsDashing": false,
+						"NormalSpeed": 30,
+						"DashSpeed": 400,
+						"DashDuration": 0.5,
+						"DashCooldown": 2
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 124559243137330,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 180,
+						"y": -42,
 						"width": 66.25883170961923,
 						"height": 61.41666926129942,
 						"originX": 0.5,

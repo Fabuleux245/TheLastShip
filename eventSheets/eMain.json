@@ -1,5 +1,30 @@
 {
 	"name": "eMain",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 571371048986299,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 417806542352117,
+					"parameters": {
+						"layout": "NIveau1"
+					}
+				}
+			],
+			"sid": 316795242803498
+		}
+	],
 	"sid": 348063102053930
 }

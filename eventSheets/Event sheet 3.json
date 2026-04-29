@@ -371,11 +371,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Enemy_Red",
-							"sid": 893853514590959,
+							"sid": 401184011876436,
 							"parameters": {
 								"instance-variable": "ShootTimer",
 								"comparison": 5,
-								"value": "2.5"
+								"value": "1.5"
 							}
 						},
 						{

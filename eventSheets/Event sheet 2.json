@@ -371,11 +371,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Enemy_Red",
-							"sid": 696015783483271,
+							"sid": 516779515742491,
 							"parameters": {
 								"instance-variable": "ShootTimer",
 								"comparison": 5,
-								"value": "2"
+								"value": "1.8"
 							}
 						},
 						{
@@ -1564,18 +1564,6 @@
 				}
 			],
 			"sid": 195577388869115
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 875812322976992
-				}
-			],
-			"actions": [],
-			"sid": 421909028061442
 		}
 	],
 	"sid": 795246028417374
