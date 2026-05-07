@@ -1,0 +1,27 @@
+{
+	"name": "Menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BoutonJouer",
+					"sid": 698430970567359
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 515665337988016,
+					"parameters": {
+						"layout": "NIveau1"
+					}
+				}
+			],
+			"sid": 110434131158548
+		}
+	],
+	"sid": 505064327228142
+}

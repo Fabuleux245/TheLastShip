@@ -46,6 +46,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 769473980646959
+		},
+		{
+			"name": "TargetX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 251770801860349
+		},
+		{
+			"name": "TargetY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 830176886805274
 		}
 	],
 	"behaviorTypes": [

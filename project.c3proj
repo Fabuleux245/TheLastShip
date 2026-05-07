@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Bouton",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Dictionary",
 			"name": "Dictionnaire",
 			"author": "Scirra",
@@ -111,7 +118,8 @@
 			"Text",
 			"Light",
 			"Batterybarre",
-			"pile"
+			"pile",
+			"BoutonJouer"
 		],
 		"subfolders": [
 			{
@@ -173,7 +181,8 @@
 			"NIveau1",
 			"Niveau2",
 			"Layout 2",
-			"Layout 3"
+			"Layout 3",
+			"Menu"
 		],
 		"subfolders": []
 	},
@@ -181,7 +190,8 @@
 		"items": [
 			"eMain",
 			"Event sheet 2",
-			"Event sheet 3"
+			"Event sheet 3",
+			"Menu"
 		],
 		"subfolders": []
 	},
@@ -191,7 +201,40 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "freesound_community-space-adventure-29296.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 512524744765507,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Shoot Laser Player.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 607855733626812,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Ennemi Shoot7.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 352524020096803,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "667650__deltacode__weapon_laser1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 940015654529774,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

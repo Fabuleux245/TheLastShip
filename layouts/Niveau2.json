@@ -232,7 +232,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -355,7 +357,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -427,7 +431,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -699,7 +705,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -776,7 +784,9 @@
 						"NormalSpeed": 30,
 						"DashSpeed": 400,
 						"DashDuration": 0.5,
-						"DashCooldown": 2
+						"DashCooldown": 2,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -853,7 +863,9 @@
 						"NormalSpeed": 30,
 						"DashSpeed": 400,
 						"DashDuration": 0.5,
-						"DashCooldown": 2
+						"DashCooldown": 2,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -1003,7 +1015,9 @@
 						"NormalSpeed": 30,
 						"DashSpeed": 400,
 						"DashDuration": 0.5,
-						"DashCooldown": 2
+						"DashCooldown": 2,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -1075,7 +1089,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -1147,7 +1163,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -1219,7 +1237,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -1291,7 +1311,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -1363,7 +1385,9 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
-						"ShootTimer": 0
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -1440,7 +1464,9 @@
 						"NormalSpeed": 30,
 						"DashSpeed": 400,
 						"DashDuration": 0.5,
-						"DashCooldown": 2
+						"DashCooldown": 2,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {
@@ -1517,7 +1543,9 @@
 						"NormalSpeed": 30,
 						"DashSpeed": 400,
 						"DashDuration": 0.5,
-						"DashCooldown": 2
+						"DashCooldown": 2,
+						"TargetX": 0,
+						"TargetY": 0
 					},
 					"behaviors": {
 						"Flash": {

@@ -32,6 +32,26 @@
 			"sid": 405581319177279
 		},
 		{
+			"eventType": "variable",
+			"name": "VagueEnCours",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 120502781250445
+		},
+		{
+			"eventType": "variable",
+			"name": "NumeroVague",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 934441022280961
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Mouv",
@@ -267,67 +287,6 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-y",
-							"objectClass": "Enemy_Red",
-							"sid": 895655057917448,
-							"parameters": {
-								"comparison": 4,
-								"y-co-ordinate": "scrolly - Self.Activation_Coordinate - Self.Width/2"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Enemy_Red",
-							"sid": 868068709755855,
-							"parameters": {
-								"instance-variable": "Activated"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Enemy_Red",
-							"sid": 175043567340118,
-							"parameters": {
-								"instance-variable": "Dying"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-speed",
-							"objectClass": "Enemy_Red",
-							"sid": 657210996349454,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "0"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "Enemy_Red",
-							"sid": 553689709498294,
-							"parameters": {
-								"instance-variable": "Activated",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Enemy_Red",
-							"sid": 999747190077567,
-							"parameters": {
-								"collisions": "enabled"
-							}
-						}
-					],
-					"sid": 141306782427608
-				},
-				{
 					"eventType": "comment",
 					"text": ""
 				},
@@ -411,6 +370,20 @@
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 196735937150586,
+							"parameters": {
+								"audio-file": {
+									"path": "667650__deltacode__weapon_laser1"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-angle-of-motion",
 							"objectClass": "En_Bullet_1",
 							"sid": 216024017213081,
@@ -469,6 +442,83 @@
 						}
 					],
 					"sid": 428465224911719
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Red",
+							"sid": 584006037001848,
+							"parameters": {
+								"instance-variable": "Activated"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Enemy_Red",
+							"sid": 532671250311886,
+							"parameters": {
+								"y": "Self.Y + 150 * dt"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Enemy_Red",
+							"sid": 321918665815158,
+							"parameters": {
+								"x": "Self.X + (Self.TargetX - Self.X) * 3 * dt"
+							}
+						}
+					],
+					"sid": 371792448530407
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Enemy_Red",
+							"sid": 949635707919924,
+							"parameters": {
+								"instance-variable": "Activated"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 593330422997603,
+							"parameters": {
+								"first-value": "Enemy_Red.Y",
+								"comparison": 5,
+								"second-value": "Enemy_Red.TargetY"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Enemy_Red",
+							"sid": 507294227921344,
+							"parameters": {
+								"y": "Self.TargetY"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemy_Red",
+							"sid": 488006421759131,
+							"parameters": {
+								"instance-variable": "Activated",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 220919616803849
 				}
 			],
 			"sid": 892183707759834
@@ -483,14 +533,6 @@
 				}
 			],
 			"actions": [
-				{
-					"id": "set-angle",
-					"objectClass": "Enemy_Red",
-					"sid": 568991353140056,
-					"parameters": {
-						"angle": "angle(Enemy_Red.X, Enemy_Red.Y, Player.X, Player.Y)"
-					}
-				},
 				{
 					"id": "set-angle",
 					"objectClass": "Enemy_Blue",
@@ -645,6 +687,20 @@
 							"sid": 923238662765852,
 							"parameters": {
 								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 872868176393819,
+							"parameters": {
+								"audio-file": {
+									"path": "freesound_community-space-adventure-29296"
+								},
+								"loop": "looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -1047,6 +1103,20 @@
 									"parameters": {
 										"angle": "270"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 806232293344881,
+									"parameters": {
+										"audio-file": {
+											"path": "Shoot Laser Player"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 599961850446490
@@ -1141,28 +1211,6 @@
 				}
 			],
 			"sid": 751238856677087
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 698063709455319
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "Enemies",
-					"sid": 790206062212995,
-					"parameters": {
-						"instance-variable": "Activated",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 962345854900430
 		},
 		{
 			"eventType": "group",
@@ -1564,6 +1612,438 @@
 				}
 			],
 			"sid": 195577388869115
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Vague",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 584973639414738
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 777112178794392,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 386530662206296,
+							"parameters": {
+								"variable": "NumeroVague",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 591191668950855,
+							"parameters": {
+								"variable": "VagueEnCours",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 283751463397226
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 514787629013731,
+							"parameters": {
+								"variable": "NumeroVague",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 704152336691785
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 358205911302862,
+							"parameters": {
+								"object-to-create": "Enemy_Red",
+								"layer": "\"Objects\"",
+								"x": "290",
+								"y": "-50",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 759237832838716,
+							"parameters": {
+								"instance-variable": "TargetX",
+								"value": "100"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 800056251401904,
+							"parameters": {
+								"instance-variable": "TargetY",
+								"value": "150"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 717699572884078,
+							"parameters": {
+								"object-to-create": "Enemy_Red",
+								"layer": "\"Objects\"",
+								"x": "150",
+								"y": "-50",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 470190235563980,
+							"parameters": {
+								"instance-variable": "TargetX",
+								"value": "220"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 113564247031331,
+							"parameters": {
+								"instance-variable": "TargetY",
+								"value": "150"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 901785208415627,
+							"parameters": {
+								"object-to-create": "Enemy_Red",
+								"layer": "\"Objects\"",
+								"x": "100",
+								"y": "-50",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 824643781869838,
+							"parameters": {
+								"instance-variable": "TargetX",
+								"value": "270"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy_Red",
+							"sid": 286681283738893,
+							"parameters": {
+								"instance-variable": "TargetY",
+								"value": "150"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 477511805465548,
+							"parameters": {
+								"variable": "VagueEnCours",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 165894362423080
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 576383670815533,
+							"parameters": {
+								"first-value": "Enemy_Red.Count",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 418824671134129,
+							"parameters": {
+								"variable": "VagueEnCours",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 362950894435950,
+							"parameters": {
+								"variable": "NumeroVague",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 802777724121534
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 260656835969240,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 146537367263483,
+							"parameters": {
+								"variable": "NumeroVague",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 529107064121385,
+							"parameters": {
+								"variable": "VagueEnCours",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 561202970069289
+				}
+			],
+			"sid": 351183179287347
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 595795910042856,
+					"parameters": {
+						"variable": "NumeroVague",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 679477173180111
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 878115717108249,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "100",
+						"y": "-50",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 938574317264088,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "60"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 147897879811193,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "180"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 326351811124710,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "100",
+						"y": "-50",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 177489233884192,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 777928185369321,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "90"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 229301956803897,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "100",
+						"y": "-50",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 191149047734672,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 206189807931546,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "270"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 733665319296338,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "100",
+						"y": "-50",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 599428022951904,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "140"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 404378908519887,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "50"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 655321825398195,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "100",
+						"y": "-50",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 641363067769460,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "140"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 931507772948936,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "310"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 873861803459505,
+					"parameters": {
+						"variable": "VagueEnCours",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 506017035760553
 		}
 	],
 	"sid": 795246028417374
