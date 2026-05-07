@@ -434,7 +434,7 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Enemy_Red",
-							"sid": 270916240562812,
+							"sid": 656929043191487,
 							"parameters": {
 								"instance-variable": "ShootTimer",
 								"value": "random(0, 2.5)"
@@ -1772,15 +1772,6 @@
 								"instance-variable": "TargetY",
 								"value": "150"
 							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 477511805465548,
-							"parameters": {
-								"variable": "VagueEnCours",
-								"value": "0"
-							}
 						}
 					],
 					"sid": 165894362423080
@@ -1854,6 +1845,53 @@
 						}
 					],
 					"sid": 561202970069289
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 462615854449050,
+							"parameters": {
+								"first-value": "Enemy_Red.Count",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 728694511006889,
+							"parameters": {
+								"first-value": "VagueEnCours",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 775746794683081,
+							"parameters": {
+								"first-value": "NumeroVague",
+								"comparison": 0,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 341296593434172,
+							"parameters": {
+								"variable": "VagueEnCours",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 624480434715153
 				}
 			],
 			"sid": 351183179287347
@@ -1878,6 +1916,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-playback-rate",
+					"objectClass": "Audio",
+					"sid": 552000632279877,
+					"parameters": {
+						"tag": "\"\"",
+						"playback-rate": "1.2"
+					}
+				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
