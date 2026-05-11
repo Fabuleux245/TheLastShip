@@ -1718,6 +1718,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 123456789012341,
+							"parameters": {
+								"variable": "NumeroVague",
+								"value": "10"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 260656835969240,
@@ -2033,6 +2042,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 123456789012342,
+					"parameters": {
+						"variable": "NumeroVague",
+						"value": "10"
+					}
+				},
 				{
 					"id": "wait",
 					"objectClass": "System",
