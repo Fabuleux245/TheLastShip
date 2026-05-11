@@ -18,10 +18,10 @@
 			{
 				"frames": [
 					{
-						"width": 7,
-						"height": 17,
-						"originX": 0.571429,
-						"originY": 0.529412,
+						"width": 12,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\BundleGames\\Shmup\\Graphics\\bullets\\bullet_player_1.png",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -29,22 +29,22 @@
 						"imageSpriteId": 9846922,
 						"collisionPoly": {
 							"points": [
-								0.142857,
-								0.0588235,
-								0.428571,
 								0,
-								0.857143,
-								0.0588235,
-								1,
-								0.470588,
-								0.714286,
-								0.882353,
-								0.428571,
-								1,
-								0.285714,
-								0.882353,
 								0,
-								0.470588
+								0.3095226666666666,
+								0,
+								1,
+								0,
+								1,
+								0.430672,
+								1,
+								0.9012605714285715,
+								0.3095226666666666,
+								1,
+								0,
+								0.9012605714285715,
+								0,
+								0.430672
 							]
 						},
 						"useCollisionPoly": true,

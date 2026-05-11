@@ -148,7 +148,7 @@
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -195,10 +195,10 @@
 					"world": {
 						"x": 168.98851173626193,
 						"y": 375.8765365604282,
-						"width": 47,
-						"height": 35,
-						"originX": 0.48936178723404256,
-						"originY": 0.5428574285714286,
+						"width": 54,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -213,7 +213,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -269,10 +269,10 @@
 					"world": {
 						"x": 289,
 						"y": 126,
-						"width": 43.88639197326372,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -320,10 +320,10 @@
 					"world": {
 						"x": 63.145562204919514,
 						"y": 108.56143040735887,
-						"width": 65.68227526513984,
-						"height": 56.49545591079616,
-						"originX": 0.5074623880597015,
-						"originY": 0.5084746440677966,
+						"width": 123.52189079712865,
+						"height": 101.5003106193965,
+						"originX": 0.5075808386638238,
+						"originY": 0.529101456987528,
 						"color": [
 							1,
 							1,
@@ -338,7 +338,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -394,10 +394,10 @@
 					"world": {
 						"x": 135.19820331232015,
 						"y": 105.29105044669745,
-						"width": 45.092033775468344,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 84.87912240088158,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -412,7 +412,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -468,10 +468,10 @@
 					"world": {
 						"x": 314,
 						"y": 303,
-						"width": 43.88639197326372,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -519,10 +519,10 @@
 					"world": {
 						"x": -114.5876108227104,
 						"y": -121.95893923288847,
-						"width": 67,
-						"height": 59,
-						"originX": 0.5074623880597015,
-						"originY": 0.5084746440677966,
+						"width": 126,
+						"height": 106,
+						"originX": 0.5075808386638238,
+						"originY": 0.529101456987528,
 						"color": [
 							1,
 							1,
@@ -594,10 +594,10 @@
 					"world": {
 						"x": 274.6017570904959,
 						"y": 368.66849722489155,
-						"width": 35.05900899571287,
-						"height": 35.90465343380043,
-						"originX": 0.48743718592964824,
-						"originY": 0.4975466143277723,
+						"width": 0.7047036984062889,
+						"height": 1.1979962872906915,
+						"originX": 0.4798994974874372,
+						"originY": 0.49769093113202095,
 						"color": [
 							1,
 							1,
@@ -631,10 +631,10 @@
 					"world": {
 						"x": 72.16898450434275,
 						"y": 374.6874502982537,
-						"width": 35.05900899571287,
-						"height": 35.90465343380043,
-						"originX": 0.48743718592964824,
-						"originY": 0.4975466143277723,
+						"width": 0.7047036984062889,
+						"height": 1.1979962872906915,
+						"originX": 0.4798994974874372,
+						"originY": 0.49769093113202095,
 						"color": [
 							1,
 							1,
@@ -668,10 +668,10 @@
 					"world": {
 						"x": 210.44917158647024,
 						"y": 265.4097262295809,
-						"width": 35.05900899571287,
-						"height": 35.90465343380043,
-						"originX": 0.48743718592964824,
-						"originY": 0.4975466143277723,
+						"width": 0.7047036984062889,
+						"height": 1.1979962872906915,
+						"originX": 0.4798994974874372,
+						"originY": 0.49769093113202095,
 						"color": [
 							1,
 							1,
@@ -686,7 +686,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -742,10 +742,10 @@
 					"world": {
 						"x": 115.59156446167458,
 						"y": 181.93363331180427,
-						"width": 43.88639197326372,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 64,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -760,7 +760,7 @@
 					"type": "Enemy_Blue",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -821,8 +821,8 @@
 					"world": {
 						"x": 226,
 						"y": 170,
-						"width": 66.25883170961923,
-						"height": 61.41666926129942,
+						"width": 22.528002781270537,
+						"height": 38.07833494200564,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -839,7 +839,7 @@
 					"type": "Enemy_Blue",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -900,8 +900,8 @@
 					"world": {
 						"x": 58,
 						"y": 240,
-						"width": 66.25883170961923,
-						"height": 61.41666926129942,
+						"width": 34,
+						"height": 62,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -973,10 +973,10 @@
 					"world": {
 						"x": 47.766483908823886,
 						"y": 27.106580648366037,
-						"width": 213.1083652678564,
-						"height": 197.90887103102745,
-						"originX": 0.1,
-						"originY": 0.512,
+						"width": 105.7017491728568,
+						"height": 25.332335491971513,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -991,7 +991,7 @@
 					"type": "Enemy_Blue",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1052,8 +1052,8 @@
 					"world": {
 						"x": 126,
 						"y": -103,
-						"width": 66.25883170961923,
-						"height": 61.41666926129942,
+						"width": 22.528002781270537,
+						"height": 38.07833494200564,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1070,7 +1070,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1126,10 +1126,10 @@
 					"world": {
 						"x": 241,
 						"y": -56,
-						"width": 43.88639197326372,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1144,7 +1144,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1200,10 +1200,10 @@
 					"world": {
 						"x": 127,
 						"y": -188,
-						"width": 43.88639197326372,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1218,7 +1218,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1274,10 +1274,10 @@
 					"world": {
 						"x": 255,
 						"y": -181,
-						"width": 43.88639197326372,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1292,7 +1292,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1348,10 +1348,10 @@
 					"world": {
 						"x": 53,
 						"y": -130,
-						"width": 43.88639197326372,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1366,7 +1366,7 @@
 					"type": "Enemy_Red",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1422,10 +1422,10 @@
 					"world": {
 						"x": 115,
 						"y": -348,
-						"width": 43.88639197326372,
-						"height": 50.1958127534542,
-						"originX": 0.5084286594855623,
-						"originY": 0.4758824420542343,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1440,7 +1440,7 @@
 					"type": "Enemy_Blue",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1501,8 +1501,8 @@
 					"world": {
 						"x": 186,
 						"y": -264,
-						"width": 66.25883170961923,
-						"height": 61.41666926129942,
+						"width": 22.528002781270537,
+						"height": 38.07833494200564,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1519,7 +1519,7 @@
 					"type": "Enemy_Blue",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1580,8 +1580,8 @@
 					"world": {
 						"x": 268,
 						"y": 38,
-						"width": 66.25883170961923,
-						"height": 61.41666926129942,
+						"width": 22.528002781270537,
+						"height": 38.07833494200564,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1631,10 +1631,10 @@
 					"world": {
 						"x": 323,
 						"y": 76,
-						"width": 78.36364265578209,
-						"height": 67.40311142995385,
-						"originX": 0.5074623880597015,
-						"originY": 0.5084746440677966,
+						"width": 147.37043245714244,
+						"height": 121.09711545042558,
+						"originX": 0.5075808386638238,
+						"originY": 0.529101456987528,
 						"color": [
 							1,
 							1,
