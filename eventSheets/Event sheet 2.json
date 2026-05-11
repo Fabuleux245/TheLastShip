@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "Battery",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "10",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "MaxBattery",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "10",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -81,14 +81,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 390459216193430,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
 							"id": "simulate-control",
 							"objectClass": "Player",
 							"sid": 548644264860384,
@@ -122,14 +114,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 902380513721314,
-							"parameters": {
-								"frame-number": "2"
-							}
-						},
 						{
 							"id": "simulate-control",
 							"objectClass": "Player",
@@ -209,72 +193,6 @@
 						}
 					],
 					"sid": 268129606182905
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 947821804853077,
-							"parameters": {
-								"key": 68
-							},
-							"isInverted": true
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 909702926634756,
-							"parameters": {
-								"key": 81
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 794951961599363,
-							"parameters": {
-								"frame-number": "0"
-							}
-						}
-					],
-					"sid": 482677282099235
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 350968313438195,
-							"parameters": {
-								"key": 68
-							}
-						},
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 734756738089985,
-							"parameters": {
-								"key": 81
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 520676560570653,
-							"parameters": {
-								"frame-number": "0"
-							}
-						}
-					],
-					"sid": 741492131645942
 				}
 			],
 			"sid": 800825112529205
@@ -564,17 +482,18 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
-					"objectClass": "Player",
-					"sid": 719670403166073
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 154340888262176,
+					"parameters": {
+						"variable": "Battery",
+						"value": "2"
+					}
 				},
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 442323231848320,
-					"parameters": {
-						"layout": "Layout 3"
-					}
+					"id": "destroy",
+					"objectClass": "Enemies",
+					"sid": 499897613365607
 				}
 			],
 			"sid": 408425676697768
@@ -593,12 +512,18 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
+					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 697619823794396,
+					"sid": 985910630773800,
 					"parameters": {
-						"layout": "Layout 3"
+						"variable": "Battery",
+						"value": "2"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Enemy_Bullets",
+					"sid": 289702163611721
 				}
 			],
 			"sid": 259723582339705
@@ -617,12 +542,18 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
+					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 782424455058057,
+					"sid": 684723975936489,
 					"parameters": {
-						"layout": "Layout 3"
+						"variable": "Battery",
+						"value": "2"
 					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "En_Asteroid",
+					"sid": 571366947164298
 				}
 			],
 			"sid": 741326696544044
@@ -767,10 +698,10 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 482542116673172,
+							"sid": 700116190374699,
 							"parameters": {
 								"variable": "Battery",
-								"value": "1"
+								"value": "2"
 							}
 						},
 						{
@@ -864,35 +795,17 @@
 								"variable": "Battery",
 								"value": "dt*0.2"
 							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Batterybarre",
+							"sid": 677730973302142,
+							"parameters": {
+								"frame-number": "Battery+1"
+							}
 						}
 					],
 					"sid": 810505913114049
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 619773654153760,
-							"parameters": {
-								"variable": "Battery",
-								"comparison": 3,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Light",
-							"sid": 812020994768683,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 923833058373326
 				},
 				{
 					"eventType": "block",
@@ -920,27 +833,6 @@
 						}
 					],
 					"sid": 318242220848288
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 859048536496914
-						}
-					],
-					"actions": [
-						{
-							"id": "set-width",
-							"objectClass": "Batterybarre",
-							"sid": 436589161753438,
-							"parameters": {
-								"width": "(Battery / MaxBattery) * 200"
-							}
-						}
-					],
-					"sid": 218262673133175
 				}
 			],
 			"sid": 865576782063860
