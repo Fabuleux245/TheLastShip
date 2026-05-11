@@ -1674,9 +1674,14 @@
 							}
 						},
 						{
-							"id": "trigger-once-while-true",
+							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 704152336691785
+							"sid": 424667531931774,
+							"parameters": {
+								"variable": "VagueEnCours",
+								"comparison": 0,
+								"value": "1"
+							}
 						}
 					],
 					"actions": [
@@ -1772,6 +1777,15 @@
 								"instance-variable": "TargetY",
 								"value": "150"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 207672262533855,
+							"parameters": {
+								"variable": "VagueEnCours",
+								"value": "0"
+							}
 						}
 					],
 					"sid": 165894362423080
@@ -1808,11 +1822,6 @@
 								"comparison": 0,
 								"value": "1"
 							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 802777724121534
 						}
 					],
 					"actions": [
@@ -1910,9 +1919,14 @@
 					}
 				},
 				{
-					"id": "trigger-once-while-true",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 679477173180111
+					"sid": 889536755845128,
+					"parameters": {
+						"variable": "VagueEnCours",
+						"comparison": 0,
+						"value": "1"
+					}
 				}
 			],
 			"actions": [
@@ -2091,6 +2105,121 @@
 				}
 			],
 			"sid": 506017035760553
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 383839107414862,
+					"parameters": {
+						"first-value": "Enemy_Red.Count",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 585882439404481,
+					"parameters": {
+						"variable": "VagueEnCours",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 191947143845462,
+					"parameters": {
+						"variable": "NumeroVague",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 539626083606951,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 142858147475479,
+					"parameters": {
+						"variable": "NumeroVague",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 734359239601460,
+					"parameters": {
+						"variable": "VagueEnCours",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 234249974737452
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 916095005954848,
+					"parameters": {
+						"variable": "NumeroVague",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 695404976103613,
+					"parameters": {
+						"variable": "VagueEnCours",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 940921501678805,
+					"parameters": {
+						"object-to-create": "Enemy_Blue",
+						"layer": "\"Objects\"",
+						"x": "185",
+						"y": "-50",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Enemy_Blue",
+					"sid": 119970517093626,
+					"parameters": {
+						"instance-variable": "IsCircling",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 712084331950961
 		}
 	],
 	"sid": 795246028417374

@@ -60,6 +60,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 830176886805274
+		},
+		{
+			"name": "CircleAngle",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 786963614329055
+		},
+		{
+			"name": "IsCircling",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 787949138612746
 		}
 	],
 	"behaviorTypes": [

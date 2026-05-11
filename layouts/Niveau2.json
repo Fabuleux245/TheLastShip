@@ -786,7 +786,9 @@
 						"DashDuration": 0.5,
 						"DashCooldown": 2,
 						"TargetX": 0,
-						"TargetY": 0
+						"TargetY": 0,
+						"CircleAngle": 0,
+						"IsCircling": false
 					},
 					"behaviors": {
 						"Flash": {
@@ -865,7 +867,9 @@
 						"DashDuration": 0.5,
 						"DashCooldown": 2,
 						"TargetX": 0,
-						"TargetY": 0
+						"TargetY": 0,
+						"CircleAngle": 0,
+						"IsCircling": false
 					},
 					"behaviors": {
 						"Flash": {
@@ -1017,7 +1021,9 @@
 						"DashDuration": 0.5,
 						"DashCooldown": 2,
 						"TargetX": 0,
-						"TargetY": 0
+						"TargetY": 0,
+						"CircleAngle": 0,
+						"IsCircling": false
 					},
 					"behaviors": {
 						"Flash": {
@@ -1466,7 +1472,9 @@
 						"DashDuration": 0.5,
 						"DashCooldown": 2,
 						"TargetX": 0,
-						"TargetY": 0
+						"TargetY": 0,
+						"CircleAngle": 0,
+						"IsCircling": false
 					},
 					"behaviors": {
 						"Flash": {
@@ -1545,7 +1553,9 @@
 						"DashDuration": 0.5,
 						"DashCooldown": 2,
 						"TargetX": 0,
-						"TargetY": 0
+						"TargetY": 0,
+						"CircleAngle": 0,
+						"IsCircling": false
 					},
 					"behaviors": {
 						"Flash": {
