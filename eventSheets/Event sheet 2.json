@@ -55,7 +55,7 @@
 			"eventType": "variable",
 			"name": "EnemyMaxHP",
 			"type": "number",
-			"initialValue": "2",
+			"initialValue": "3",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -1106,17 +1106,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-speed",
-							"objectClass": "Enemy_Red",
-							"sid": 566340112474263,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"speed": "10"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 629324374393045
 				},
 				{

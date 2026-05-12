@@ -1,7 +1,7 @@
 {
-	"name": "Enemy_Red",
+	"name": "Enemy_Red2",
 	"plugin-id": "Sprite",
-	"sid": 394732648078217,
+	"sid": 961955814358909,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,24 +10,30 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 597230281736532
+			"sid": 865073482304011
 		},
 		{
 			"name": "TargetX",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 212752861012792
+			"sid": 163621615427017
 		},
 		{
 			"name": "TargetY",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 816360999545445
+			"sid": 724917349250907
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 222991539013645
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -42,7 +48,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7549841,
+						"imageSpriteId": 2352908,
 						"collisionPoly": {
 							"points": [
 								0.2348743394928573,
@@ -97,7 +103,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2335113,
+						"imageSpriteId": 4493549,
 						"collisionPoly": {
 							"points": [
 								0.9090909090909091,
@@ -142,7 +148,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6635243,
+						"imageSpriteId": 6808837,
 						"collisionPoly": {
 							"points": [
 								0.8225806451612903,
@@ -179,7 +185,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 465670949676831,
+				"sid": 323536800642814,
 				"name": "idle",
 				"isLooping": true,
 				"isPingPong": false,

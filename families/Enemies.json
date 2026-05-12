@@ -89,6 +89,7 @@
 	],
 	"members": [
 		"Enemy_Red",
-		"Enemy_Blue"
+		"Enemy_Blue",
+		"Enemy_Red2"
 	]
 }

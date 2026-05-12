@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
@@ -85,6 +92,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "wrap",
 			"name": "Wrap",
 			"author": "Scirra",
@@ -120,7 +134,8 @@
 			"Batterybarre",
 			"pile",
 			"BoutonJouer",
-			"Sprite"
+			"Sprite",
+			"Browser"
 		],
 		"subfolders": [
 			{
@@ -136,7 +151,9 @@
 					"Boss_Cannons",
 					"Boss_Turrets",
 					"En_Asteroid",
-					"Enemy_Blue"
+					"Enemy_Blue",
+					"EnemySpawner",
+					"Enemy_Red2"
 				],
 				"subfolders": [],
 				"name": "Enemies"
@@ -192,7 +209,7 @@
 			"eMain",
 			"Event sheet 2",
 			"Menu",
-			"Event sheet 4"
+			"Event sheet 3"
 		],
 		"subfolders": []
 	},

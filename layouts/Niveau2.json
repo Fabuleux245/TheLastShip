@@ -444,8 +444,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 210.44917158647024,
-						"y": 265.4097262295809,
+						"x": 117.14929705698472,
+						"y": 281.52515910285564,
 						"width": 15,
 						"height": 25.5,
 						"originX": 0.4798994974874372,
@@ -461,74 +461,40 @@
 					}
 				},
 				{
-					"type": "Enemy_Blue",
+					"type": "EnemySpawner",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "idle",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 64,
-					"sid": 441985204230949,
+					"uid": 19,
+					"sid": 787118827001656,
 					"tags": "",
 					"instanceVariables": {
-						"Activated": false,
-						"Activation_Coordinate": 0,
-						"Invulnerable": false,
-						"Shielded": false,
-						"Health": 0,
-						"Points": 0,
-						"Dying": false,
-						"Debris_RGB": "",
-						"BigDeathSequence": false,
-						"DropsItems": false,
-						"DashTimer": 0,
-						"IsDashing": false,
-						"NormalSpeed": 30,
-						"DashSpeed": 400,
-						"DashDuration": 0.5,
-						"DashCooldown": 2,
-						"TargetX": 0,
-						"TargetY": 0,
-						"CircleAngle": 0,
-						"IsCircling": false
+						"EnemyType": "Enemy_Red\"",
+						"SpawnInterval": 0.5,
+						"StartDelay": 0,
+						"MaxCount": 0,
+						"SpawnedCount": 0
 					},
 					"behaviors": {
-						"Flash": {
+						"Timer": {
 							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 0,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 441985204230949,
+						"sid": 787118827001656,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 300,
-						"y": 284,
-						"width": 33.117428989773636,
-						"height": 55.97729038541812,
+						"x": 114.09697215081457,
+						"y": 206.1950075300304,
+						"width": 40.49937264742789,
+						"height": 42.195734002509425,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -538,458 +504,7 @@
 							1
 						],
 						"z": 0,
-						"angle": 0.34615927704471794
-					}
-				},
-				{
-					"type": "Enemy_Blue",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 65,
-					"sid": 307352983453005,
-					"tags": "",
-					"instanceVariables": {
-						"Activated": false,
-						"Activation_Coordinate": 0,
-						"Invulnerable": false,
-						"Shielded": false,
-						"Health": 0,
-						"Points": 0,
-						"Dying": false,
-						"Debris_RGB": "",
-						"BigDeathSequence": false,
-						"DropsItems": false,
-						"DashTimer": 0,
-						"IsDashing": false,
-						"NormalSpeed": 30,
-						"DashSpeed": 400,
-						"DashDuration": 0.5,
-						"DashCooldown": 2,
-						"TargetX": 0,
-						"TargetY": 0,
-						"CircleAngle": 0,
-						"IsCircling": false
-					},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 0,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 307352983453005,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 82,
-						"y": 293,
-						"width": 33.117428989773636,
-						"height": 55.97729038541812,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 5.573865639949653
-					}
-				},
-				{
-					"type": "Enemy_Red",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 66,
-					"sid": 628802692147812,
-					"tags": "",
-					"instanceVariables": {
-						"Activated": false,
-						"Activation_Coordinate": 0,
-						"Invulnerable": false,
-						"Shielded": false,
-						"Health": 0,
-						"Points": 0,
-						"Dying": false,
-						"Debris_RGB": "",
-						"BigDeathSequence": false,
-						"DropsItems": false,
-						"ShootTimer": 0,
-						"TargetX": 0,
-						"TargetY": 0
-					},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 100,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 628802692147812,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 66,
-						"y": 191,
-						"width": 82.60967900849641,
-						"height": 26.189119697454366,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 3.1532877623790445
-					}
-				},
-				{
-					"type": "Enemy_Red",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 67,
-					"sid": 701884143675032,
-					"tags": "",
-					"instanceVariables": {
-						"Activated": false,
-						"Activation_Coordinate": 0,
-						"Invulnerable": false,
-						"Shielded": false,
-						"Health": 0,
-						"Points": 0,
-						"Dying": false,
-						"Debris_RGB": "",
-						"BigDeathSequence": false,
-						"DropsItems": false,
-						"ShootTimer": 0,
-						"TargetX": 0,
-						"TargetY": 0
-					},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 100,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 701884143675032,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 181,
-						"y": 163,
-						"width": 82.60967900849641,
-						"height": 26.189119697454366,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 3.171991925819976
-					}
-				},
-				{
-					"type": "Enemy_Red",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 68,
-					"sid": 132905184745516,
-					"tags": "",
-					"instanceVariables": {
-						"Activated": false,
-						"Activation_Coordinate": 0,
-						"Invulnerable": false,
-						"Shielded": false,
-						"Health": 0,
-						"Points": 0,
-						"Dying": false,
-						"Debris_RGB": "",
-						"BigDeathSequence": false,
-						"DropsItems": false,
-						"ShootTimer": 0,
-						"TargetX": 0,
-						"TargetY": 0
-					},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 100,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 132905184745516,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 283,
-						"y": 186,
-						"width": 74.86245273890583,
-						"height": 23.733075338818097,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 3.1576773373930314
-					}
-				},
-				{
-					"type": "Enemy_Red",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 69,
-					"sid": 854112181916539,
-					"tags": "",
-					"instanceVariables": {
-						"Activated": false,
-						"Activation_Coordinate": 0,
-						"Invulnerable": false,
-						"Shielded": false,
-						"Health": 0,
-						"Points": 0,
-						"Dying": false,
-						"Debris_RGB": "",
-						"BigDeathSequence": false,
-						"DropsItems": false,
-						"ShootTimer": 0,
-						"TargetX": 0,
-						"TargetY": 0
-					},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 100,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 854112181916539,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 132,
-						"y": 228,
-						"width": 82.60967900849641,
-						"height": 26.189119697454366,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 3.1532877623790445
-					}
-				},
-				{
-					"type": "Enemy_Red",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 70,
-					"sid": 281571602362705,
-					"tags": "",
-					"instanceVariables": {
-						"Activated": false,
-						"Activation_Coordinate": 0,
-						"Invulnerable": false,
-						"Shielded": false,
-						"Health": 0,
-						"Points": 0,
-						"Dying": false,
-						"Debris_RGB": "",
-						"BigDeathSequence": false,
-						"DropsItems": false,
-						"ShootTimer": 0,
-						"TargetX": 0,
-						"TargetY": 0
-					},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 100,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 281571602362705,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 241,
-						"y": 230,
-						"width": 82.60967900849641,
-						"height": 26.189119697454366,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 3.1532877623790445
+						"angle": 0
 					}
 				}
 			],
@@ -1137,7 +652,145 @@
 			"name": "UI",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Enemy_Red",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"sid": 987694309815142,
+					"tags": "",
+					"instanceVariables": {
+						"Activated": false,
+						"Activation_Coordinate": 0,
+						"Invulnerable": false,
+						"Shielded": false,
+						"Health": 0,
+						"Points": 0,
+						"Dying": false,
+						"Debris_RGB": "",
+						"BigDeathSequence": false,
+						"DropsItems": false,
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 130
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 987694309815142,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 111.12967102740026,
+						"y": 198.9852673232631,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 3.1532877623790445
+					}
+				},
+				{
+					"type": "Enemy_Red2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 38,
+					"sid": 271141444347270,
+					"tags": "",
+					"instanceVariables": {
+						"Activated": false,
+						"Activation_Coordinate": 0,
+						"Invulnerable": false,
+						"Shielded": false,
+						"Health": 0,
+						"Points": 0,
+						"Dying": false,
+						"Debris_RGB": "",
+						"BigDeathSequence": false,
+						"DropsItems": false,
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 271141444347270,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 282.01494065230054,
+						"y": 185.74646160417356,
+						"width": 83.22746030504337,
+						"height": 29.423971506850567,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 3.191917190777798
+					}
+				}
+			],
 			"sid": 512326501865463,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -1183,5 +836,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 4"
+	"eventSheet": "Event sheet 3"
 }
