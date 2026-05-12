@@ -2074,6 +2074,41 @@
 					}
 				},
 				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Enemy_Blue",
+					"sid": 209618244226261,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "90"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Enemy_Blue",
+					"sid": 574598238058856,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "Self.NormalSpeed"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Enemy_Blue",
+					"sid": 633531847478731,
+					"parameters": {
+						"instance-variable": "Activated",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Enemy_Blue",
+					"sid": 356944902451950,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
 					"id": "create-object",
 					"objectClass": "System",
 					"sid": 711893030511656,
