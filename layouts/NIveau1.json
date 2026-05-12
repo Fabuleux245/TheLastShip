@@ -552,7 +552,7 @@
 						"expanded": true
 					},
 					"showing": true,
-					"locked": false,
+					"locked": true,
 					"world": {
 						"x": 85.81843378973983,
 						"y": 457.6493209392972,
