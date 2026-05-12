@@ -1706,6 +1706,11 @@
 							}
 						},
 						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 623236247282057
+						},
+						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
 							"sid": 362950894435950,
@@ -1746,53 +1751,6 @@
 						}
 					],
 					"sid": 561202970069289
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 462615854449050,
-							"parameters": {
-								"first-value": "Enemy_Red.Count",
-								"comparison": 0,
-								"second-value": "0"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 728694511006889,
-							"parameters": {
-								"first-value": "VagueEnCours",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						},
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 775746794683081,
-							"parameters": {
-								"first-value": "NumeroVague",
-								"comparison": 0,
-								"second-value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 341296593434172,
-							"parameters": {
-								"variable": "VagueEnCours",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 624480434715153
 				}
 			],
 			"sid": 351183179287347
@@ -2022,6 +1980,11 @@
 					}
 				},
 				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 421038747411648
+				},
+				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
 					"sid": 191947143845462,
@@ -2108,6 +2071,139 @@
 					"parameters": {
 						"instance-variable": "IsCircling",
 						"value": "true"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 711893030511656,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "185",
+						"y": "-80",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 460113751177377,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "180"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 550689335165077,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "140"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 388892230572304,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "185",
+						"y": "-110",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 492144214200606,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "150"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 864980273131763,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "140"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 688135046249212,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "185",
+						"y": "-140",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 603387985435215,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "220"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 657923213373243,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "140"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 454078966167870,
+					"parameters": {
+						"object-to-create": "Enemy_Red",
+						"layer": "\"Objects\"",
+						"x": "185",
+						"y": "-170",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 496041089238146,
+					"parameters": {
+						"instance-variable": "TargetX",
+						"value": "180"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemy_Red",
+					"sid": 520126011513313,
+					"parameters": {
+						"instance-variable": "TargetY",
+						"value": "170"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 176333892019320,
+					"parameters": {
+						"variable": "VagueEnCours",
+						"value": "0"
 					}
 				}
 			],
