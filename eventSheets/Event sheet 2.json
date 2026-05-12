@@ -52,6 +52,16 @@
 			"sid": 934441022280961
 		},
 		{
+			"eventType": "variable",
+			"name": "EnemyMaxHP",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 190621394632950
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Mouv",
@@ -1034,16 +1044,45 @@
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "Enemies",
-							"sid": 700607943185456
-						},
-						{
-							"id": "destroy",
 							"objectClass": "Player_Bullets",
 							"sid": 558896504946266
+						},
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Enemies",
+							"sid": 211608988370577,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "1"
+							}
 						}
 					],
-					"sid": 882034101814733
+					"sid": 882034101814733,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Enemies",
+									"sid": 344753071134314,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Enemies",
+									"sid": 906897965045349
+								}
+							],
+							"sid": 823844079411465
+						}
+					]
 				}
 			],
 			"sid": 933396571696752
@@ -2208,6 +2247,38 @@
 				}
 			],
 			"sid": 712084331950961
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Group1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Enemies",
+							"sid": 742202394714782
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemies",
+							"sid": 313443656471896,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "3"
+							}
+						}
+					],
+					"sid": 180909334765632
+				}
+			],
+			"sid": 281763523374645
 		}
 	],
 	"sid": 795246028417374
