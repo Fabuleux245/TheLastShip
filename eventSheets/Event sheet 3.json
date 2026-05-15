@@ -1619,6 +1619,15 @@
 										"type": "log",
 										"message": "\"SSPA\""
 									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Enemy_Red",
+									"sid": 981315699072342,
+									"parameters": {
+										"instance-variable": "Activation_Coordinate",
+										"value": "1"
+									}
 								}
 							],
 							"sid": 231654766809130,
