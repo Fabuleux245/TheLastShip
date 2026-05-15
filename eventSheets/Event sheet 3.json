@@ -391,6 +391,15 @@
 					"parameters": {
 						"angle": "angle(Self.X, Self.Y, Player.X, Player.Y) - 90"
 					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Enemy_Blue",
+					"sid": 255358798567353,
+					"parameters": {
+						"instance-variable": "IsCircling",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 899709307160851
@@ -1491,6 +1500,23 @@
 								"instance-variable": "Health",
 								"value": "3"
 							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemies",
+							"sid": 240817848220121,
+							"parameters": {
+								"instance-variable": "Activated",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Enemies",
+							"sid": 179015523103653,
+							"parameters": {
+								"collisions": "enabled"
+							}
 						}
 					],
 					"sid": 891803400435665
@@ -1618,15 +1644,6 @@
 									"parameters": {
 										"type": "log",
 										"message": "\"SSPA\""
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Enemy_Red",
-									"sid": 981315699072342,
-									"parameters": {
-										"instance-variable": "Activation_Coordinate",
-										"value": "1"
 									}
 								}
 							],

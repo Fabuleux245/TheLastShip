@@ -507,8 +507,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 233,
-						"y": 321,
+						"x": 213,
+						"y": 108,
 						"width": 82.60967900849641,
 						"height": 26.189119697454366,
 						"originX": 0.5,
@@ -521,6 +521,87 @@
 						],
 						"z": 0,
 						"angle": 3.1532877623790445
+					}
+				},
+				{
+					"type": "Enemy_Blue",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 39,
+					"sid": 591646290755601,
+					"tags": "",
+					"instanceVariables": {
+						"Activated": false,
+						"Activation_Coordinate": 0,
+						"Invulnerable": false,
+						"Shielded": false,
+						"Health": 0,
+						"Points": 0,
+						"Dying": false,
+						"Debris_RGB": "",
+						"BigDeathSequence": false,
+						"DropsItems": false,
+						"DashTimer": 0,
+						"IsDashing": false,
+						"NormalSpeed": 30,
+						"DashSpeed": 400,
+						"DashDuration": 0.3,
+						"DashCooldown": 2,
+						"TargetX": 0,
+						"TargetY": 0,
+						"CircleAngle": 0,
+						"IsCircling": false
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 591646290755601,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 289,
+						"y": 264,
+						"width": 34,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
