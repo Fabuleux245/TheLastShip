@@ -62,6 +62,36 @@
 			"sid": 963150501110644
 		},
 		{
+			"eventType": "variable",
+			"name": "GameTime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 754527932726047
+		},
+		{
+			"eventType": "variable",
+			"name": "SpawnCooldown",
+			"type": "number",
+			"initialValue": "2.5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 201232155318375
+		},
+		{
+			"eventType": "variable",
+			"name": "BaseInterval",
+			"type": "number",
+			"initialValue": "2.5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 291501517521992
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Mouv2",
@@ -1527,7 +1557,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Group3",
+			"title": "Spawn System2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -1535,14 +1565,59 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-start-of-layout",
+							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 118661694878470
+							"sid": 989823280249925
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 179032721006368,
+							"parameters": {
+								"variable": "GameTime",
+								"value": "dt"
+							}
 						},
 						{
-							"id": "for-each",
+							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 536925130930881,
+							"sid": 899409039683463,
+							"parameters": {
+								"variable": "SpawnCooldown",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 294625170494915
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 491116447873007,
+							"parameters": {
+								"variable": "SpawnCooldown",
+								"comparison": 2,
+								"value": "0"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "EnemySpawner",
+							"sid": 878847980294588,
+							"parameters": {
+								"instance-variable": "IsOccupied"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "pick-random-instance",
+							"objectClass": "System",
+							"sid": 102137080360282,
 							"parameters": {
 								"object": "EnemySpawner"
 							}
@@ -1550,110 +1625,83 @@
 					],
 					"actions": [
 						{
-							"id": "start-timer",
-							"objectClass": "EnemySpawner",
-							"sid": 645569730029233,
-							"behaviorType": "Timer",
+							"id": "create-object-by-name",
+							"objectClass": "System",
+							"sid": 455427948969276,
 							"parameters": {
-								"duration": "EnemySpawner.StartDelay",
-								"type": "once",
-								"tag": "\"spawn\""
+								"object-name": "EnemySpawner.EnemyType",
+								"layer": "\"Objects\"",
+								"x": "EnemySpawner.X",
+								"y": "EnemySpawner.y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemies",
+							"sid": 691289501826548,
+							"parameters": {
+								"instance-variable": "SpawnerUID",
+								"value": "EnemySpawner.UID"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "EnemySpawner",
+							"sid": 954030259289841,
+							"parameters": {
+								"instance-variable": "IsOccupied",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 745528609126606,
+							"parameters": {
+								"variable": "SpawnCooldown",
+								"value": "max(0.4, BaseInterval - GameTime * 0.02)"
 							}
 						}
 					],
-					"sid": 536309049121606
+					"sid": 302420226534703
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-timer",
-							"objectClass": "EnemySpawner",
-							"sid": 836373333829448,
-							"behaviorType": "Timer",
+							"id": "on-destroyed",
+							"objectClass": "Enemies",
+							"sid": 513142181817931
+						},
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 495124679056815,
 							"parameters": {
-								"tag": "\"spawn\""
+								"object": "EnemySpawner",
+								"expression": "EnemySpawner.UID",
+								"comparison": 0,
+								"value": "Enemies.SpawnerUID"
 							}
 						}
 					],
-					"actions": [],
-					"sid": 770781266392305,
-					"children": [
+					"actions": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "EnemySpawner",
-									"sid": 534309043567480,
-									"parameters": {
-										"instance-variable": "SpawnedCount",
-										"comparison": 2,
-										"value": "EnemySpawner.MaxCount"
-									}
-								},
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "EnemySpawner",
-									"sid": 625191526630930,
-									"parameters": {
-										"instance-variable": "MaxCount",
-										"comparison": 0,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "create-object-by-name",
-									"objectClass": "System",
-									"sid": 760897855834407,
-									"parameters": {
-										"object-name": "EnemySpawner.EnemyType",
-										"layer": "\"Objects\"",
-										"x": "EnemySpawner.X",
-										"y": "EnemySpawner.y",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "add-to-instvar",
-									"objectClass": "EnemySpawner",
-									"sid": 129338182190123,
-									"parameters": {
-										"instance-variable": "SpawnedCount",
-										"value": "1"
-									}
-								},
-								{
-									"id": "start-timer",
-									"objectClass": "EnemySpawner",
-									"sid": 565955483714849,
-									"behaviorType": "Timer",
-									"parameters": {
-										"duration": "EnemySpawner.SpawnInterval",
-										"type": "once",
-										"tag": "\"spawn\""
-									}
-								},
-								{
-									"id": "log",
-									"objectClass": "Browser",
-									"sid": 298304886557183,
-									"parameters": {
-										"type": "log",
-										"message": "\"SSPA\""
-									}
-								}
-							],
-							"sid": 231654766809130,
-							"isOrBlock": true
+							"id": "set-boolean-instvar",
+							"objectClass": "EnemySpawner",
+							"sid": 925883272815326,
+							"parameters": {
+								"instance-variable": "IsOccupied",
+								"value": "false"
+							}
 						}
-					]
+					],
+					"sid": 657784731693150
 				}
 			],
-			"sid": 973754086818488
+			"sid": 114764417817240
 		}
 	],
 	"sid": 398302262491990

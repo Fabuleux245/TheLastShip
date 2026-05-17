@@ -72,6 +72,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 758960577420638
+		},
+		{
+			"name": "SpawnerUID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 639403248748938
 		}
 	],
 	"behaviorTypes": [

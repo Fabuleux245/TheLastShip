@@ -483,6 +483,7 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
+						"SpawnerUID": 0,
 						"ShootTimer": 0,
 						"TargetX": 0,
 						"TargetY": 0
@@ -546,6 +547,7 @@
 						"Debris_RGB": "",
 						"BigDeathSequence": false,
 						"DropsItems": false,
+						"SpawnerUID": 0,
 						"DashTimer": 0,
 						"IsDashing": false,
 						"NormalSpeed": 30,

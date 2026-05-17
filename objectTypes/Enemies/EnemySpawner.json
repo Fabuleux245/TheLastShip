@@ -39,6 +39,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 563242522154980
+		},
+		{
+			"name": "IsOccupied",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 142363711055314
 		}
 	],
 	"behaviorTypes": [
