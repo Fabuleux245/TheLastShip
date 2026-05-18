@@ -63,33 +63,23 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "GameTime",
+			"name": "WaveSize",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "2",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 754527932726047
+			"sid": 399860414746811
 		},
 		{
 			"eventType": "variable",
-			"name": "SpawnCooldown",
+			"name": "WaveNumber",
 			"type": "number",
-			"initialValue": "2.5",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 201232155318375
-		},
-		{
-			"eventType": "variable",
-			"name": "BaseInterval",
-			"type": "number",
-			"initialValue": "2.5",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 291501517521992
+			"sid": 243661133067591
 		},
 		{
 			"eventType": "group",
@@ -1565,112 +1555,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 989823280249925
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 179032721006368,
-							"parameters": {
-								"variable": "GameTime",
-								"value": "dt"
-							}
-						},
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 899409039683463,
-							"parameters": {
-								"variable": "SpawnCooldown",
-								"value": "dt"
-							}
-						}
-					],
-					"sid": 294625170494915
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 491116447873007,
-							"parameters": {
-								"variable": "SpawnCooldown",
-								"comparison": 2,
-								"value": "0"
-							}
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "EnemySpawner",
-							"sid": 878847980294588,
-							"parameters": {
-								"instance-variable": "IsOccupied"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "pick-random-instance",
-							"objectClass": "System",
-							"sid": 102137080360282,
-							"parameters": {
-								"object": "EnemySpawner"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object-by-name",
-							"objectClass": "System",
-							"sid": 455427948969276,
-							"parameters": {
-								"object-name": "EnemySpawner.EnemyType",
-								"layer": "\"Objects\"",
-								"x": "EnemySpawner.X",
-								"y": "EnemySpawner.y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Enemies",
-							"sid": 691289501826548,
-							"parameters": {
-								"instance-variable": "SpawnerUID",
-								"value": "EnemySpawner.UID"
-							}
-						},
-						{
-							"id": "set-boolean-instvar",
-							"objectClass": "EnemySpawner",
-							"sid": 954030259289841,
-							"parameters": {
-								"instance-variable": "IsOccupied",
-								"value": "true"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 745528609126606,
-							"parameters": {
-								"variable": "SpawnCooldown",
-								"value": "max(0.4, BaseInterval - GameTime * 0.02)"
-							}
-						}
-					],
-					"sid": 302420226534703
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-destroyed",
 							"objectClass": "Enemies",
 							"sid": 513142181817931
@@ -1702,6 +1586,175 @@
 				}
 			],
 			"sid": 114764417817240
+		},
+		{
+			"functionName": "SpawnWave",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 523618472121244,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 413806799115424,
+							"parameters": {
+								"count": "WaveSize"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 141298001198767,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "EnemySpawner",
+									"sid": 996579736946108,
+									"parameters": {
+										"instance-variable": "IsOccupied"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 543428849041112,
+									"parameters": {
+										"object": "EnemySpawner"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object-by-name",
+									"objectClass": "System",
+									"sid": 118414341377203,
+									"parameters": {
+										"object-name": "EnemySpawner.EnemyType",
+										"layer": "\"Objects\"",
+										"x": "EnemySpawner.X",
+										"y": "EnemySpawner.y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Enemies",
+									"sid": 674007447874832,
+									"parameters": {
+										"instance-variable": "SpawnerUID",
+										"value": "EnemySpawner.UID"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "EnemySpawner",
+									"sid": 483267515581590,
+									"parameters": {
+										"instance-variable": "IsOccupied",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 844802112506390
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SpawnSystem",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 317902481234436
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "SpawnWave",
+							"sid": 204071810918302
+						}
+					],
+					"sid": 893743625906691
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 559652904372462,
+							"parameters": {
+								"first-value": "Enemies.Count",
+								"comparison": 0,
+								"second-value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 838133686319779
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 250686064907873,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 762049743605117,
+							"parameters": {
+								"variable": "WaveSize",
+								"value": "2"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 328933797905858,
+							"parameters": {
+								"variable": "WaveNumber",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SpawnWave",
+							"sid": 420159941203655
+						}
+					],
+					"sid": 945280216226970
+				}
+			],
+			"sid": 261939608061478
 		}
 	],
 	"sid": 398302262491990
