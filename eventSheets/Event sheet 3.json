@@ -1580,6 +1580,15 @@
 								"instance-variable": "IsOccupied",
 								"value": "false"
 							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 866572476893221,
+							"parameters": {
+								"type": "log",
+								"message": "\"DESTROY ◀ enemy.SpawnerUID=\" & Enemies.SpawnerUID & \" | spawner found UID=\" & EnemySpawner.UID"
+							}
 						}
 					],
 					"sid": 657784731693150
@@ -1651,15 +1660,6 @@
 									}
 								},
 								{
-									"id": "set-instvar-value",
-									"objectClass": "Enemies",
-									"sid": 674007447874832,
-									"parameters": {
-										"instance-variable": "SpawnerUID",
-										"value": "EnemySpawner.UID"
-									}
-								},
-								{
 									"id": "set-boolean-instvar",
 									"objectClass": "EnemySpawner",
 									"sid": 483267515581590,
@@ -1667,9 +1667,45 @@
 										"instance-variable": "IsOccupied",
 										"value": "true"
 									}
+								},
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 741784070942624,
+									"parameters": {
+										"type": "log",
+										"message": "\"SPAWN ▶ spawner UID=\" & EnemySpawner.UID & \" | created at (\" & EnemySpawner.X & \",\" & EnemySpawner.Y & \")\""
+									}
 								}
 							],
-							"sid": 844802112506390
+							"sid": 844802112506390,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-last-created",
+											"objectClass": "System",
+											"sid": 130251049392901,
+											"parameters": {
+												"object": "Enemies"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Enemies",
+											"sid": 612185678864627,
+											"parameters": {
+												"instance-variable": "SpawnerUID",
+												"value": "EnemySpawner.UID"
+											}
+										}
+									],
+									"sid": 841168598918090
+								}
+							]
 						}
 					]
 				}
@@ -1755,6 +1791,63 @@
 				}
 			],
 			"sid": 261939608061478
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Enemies",
+					"sid": 859143843424876
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 956539105919859,
+					"parameters": {
+						"type": "log",
+						"message": "\"TRIGGER DESTROY ✓ enemy.SpawnerUID=\" "
+					}
+				},
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 244573722395174,
+					"parameters": {
+						"type": "log",
+						"message": "Enemies.SpawnerUID"
+					}
+				}
+			],
+			"sid": 403732612678085
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 145782928250821
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 539823591239887,
+					"parameters": {
+						"object-to-create": "Enemy_Blue",
+						"layer": "\"Objects\"",
+						"x": "180",
+						"y": "100",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 617218371810947
 		}
 	],
 	"sid": 398302262491990
