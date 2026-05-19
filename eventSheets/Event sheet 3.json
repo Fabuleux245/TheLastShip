@@ -623,11 +623,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 101037784249120,
+							"sid": 794581492191172,
 							"parameters": {
 								"variable": "Battery",
 								"comparison": 4,
-								"value": "0"
+								"value": "2"
 							}
 						}
 					],
@@ -1827,21 +1827,34 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
+					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 145782928250821
+					"sid": 256393701750861,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 103931773467179,
+					"parameters": {
+						"variable": "WaveNumber",
+						"comparison": 5,
+						"value": "3"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 539823591239887,
+					"sid": 378251120177067,
 					"parameters": {
 						"object-to-create": "Enemy_Blue",
 						"layer": "\"Objects\"",
-						"x": "180",
-						"y": "100",
+						"x": "choose(40, LayoutWidth - 40)",
+						"y": "-50",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
