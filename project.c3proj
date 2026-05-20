@@ -78,29 +78,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Timer",
 			"name": "Timer",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "wrap",
-			"name": "Wrap",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -110,24 +89,12 @@
 			"name": "Brightness",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "tint",
-			"name": "Tint",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "rur909w17cl",
 	"objectTypes": {
 		"items": [
 			"Background",
-			"Background_Infinite",
-			"Particle_Generic",
-			"PowerUp",
-			"Particle_Debris",
-			"Particle_Smoke",
 			"Transition",
 			"Text",
 			"Light",
@@ -135,25 +102,19 @@
 			"pile",
 			"BoutonJouer",
 			"Sprite",
-			"Browser"
+			"Browser",
+			"BatteryDanger"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"En_Bullet_1",
-					"En_Bullet_3",
-					"En_Bullet_4",
-					"En_Bullet_5",
-					"En_Bullet_6",
-					"Boss",
 					"Enemy_Red",
-					"En_Laser",
-					"Boss_Cannons",
-					"Boss_Turrets",
 					"En_Asteroid",
 					"Enemy_Blue",
 					"EnemySpawner",
-					"Enemy_Red2"
+					"EnemyShootExplosion",
+					"EnemySpawner2"
 				],
 				"subfolders": [],
 				"name": "Enemies"
@@ -162,10 +123,7 @@
 				"items": [
 					"Player",
 					"Player_NormalBeam",
-					"Player_SpreadBeam",
-					"Player_SineBeam",
-					"Player_SineBeam_Effect",
-					"Player_Jets"
+					"ShootExplosion"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -196,7 +154,6 @@
 	},
 	"layouts": {
 		"items": [
-			"NIveau1",
 			"Layout 2",
 			"Layout 3",
 			"Menu",
@@ -207,7 +164,6 @@
 	"eventSheets": {
 		"items": [
 			"eMain",
-			"Event sheet 2",
 			"Menu",
 			"Event sheet 3"
 		],
@@ -248,6 +204,38 @@
 					"name": "667650__deltacode__weapon_laser1.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 940015654529774,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "siren.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 866880392360164,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "electricity.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 219451902093893,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "lose.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 147139841084111,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "menu.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 580952395497289,
 					"file-info": {
 						"purpose": "none"
 					}

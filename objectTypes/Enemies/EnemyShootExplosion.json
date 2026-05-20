@@ -1,0 +1,116 @@
+{
+	"name": "EnemyShootExplosion",
+	"plugin-id": "Sprite",
+	"sid": 720996003382799,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 7,
+						"height": 7,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5764739,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8579651,
+						"collisionPoly": {
+							"points": [
+								0.5333333333333333,
+								0.06666666666666667,
+								0.8666666666666667,
+								0.13333333333333333,
+								0.9333333333333333,
+								0.5333333333333333,
+								0.8666666666666667,
+								0.8666666666666667,
+								0.4666666666666667,
+								0.9333333333333333,
+								0.13333333333333333,
+								0.8666666666666667,
+								0.06666666666666667,
+								0.4666666666666667,
+								0.13333333333333333,
+								0.13333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 25,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5208333333333334,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5320946,
+						"collisionPoly": {
+							"points": [
+								0.52,
+								0.041666666666666664,
+								0.76,
+								0.08333333333333333,
+								0.92,
+								0.25,
+								0.96,
+								0.5833333333333334,
+								0.88,
+								0.75,
+								0.76,
+								0.9166666666666666,
+								0.6,
+								0.9583333333333334,
+								0.2,
+								0.9583333333333334,
+								0.08,
+								0.7916666666666666,
+								0.04,
+								0.5,
+								0.08,
+								0.25,
+								0.16,
+								0.08333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 336889920077124,
+				"name": "blow",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 12
+			}
+		],
+		"subfolders": []
+	}
+}

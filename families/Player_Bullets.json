@@ -21,8 +21,6 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"Player_NormalBeam",
-		"Player_SineBeam",
-		"Player_SpreadBeam"
+		"Player_NormalBeam"
 	]
 }

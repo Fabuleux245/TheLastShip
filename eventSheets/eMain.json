@@ -17,10 +17,23 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 417806542352117,
+					"sid": 924661367746953,
 					"parameters": {
-						"layout": "NIveau1"
+						"layout": "Menu"
 					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 646699812252042,
+					"parameters": {
+						"reset-static": true
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 278306452011106
 				}
 			],
 			"sid": 316795242803498

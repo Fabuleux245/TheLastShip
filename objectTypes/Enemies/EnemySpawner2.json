@@ -1,0 +1,89 @@
+{
+	"name": "EnemySpawner2",
+	"plugin-id": "Sprite",
+	"sid": 609319292254788,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "EnemyType",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 250450549570826
+		},
+		{
+			"name": "SpawnInterval",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 764005279283122
+		},
+		{
+			"name": "StartDelay",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 984356278303319
+		},
+		{
+			"name": "MaxCount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 844112062684167
+		},
+		{
+			"name": "SpawnedCount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 874451128818769
+		},
+		{
+			"name": "IsOccupied",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 238954971953837
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 806399914579322
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 123,
+						"height": 108,
+						"originX": 0.5447154471544715,
+						"originY": 0.5648148148148148,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4449454,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 836393407073979,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

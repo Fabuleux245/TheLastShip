@@ -7,283 +7,10 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Particle_Generic",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Impact",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 8,
-					"sid": 502777683268845,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 0,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						},
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 502777683268845,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 260,
-						"y": 178,
-						"width": 20,
-						"height": 20,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "Particle_Smoke",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "anim1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 9,
-					"sid": 251141674510953,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 0,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 251141674510953,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 347,
-						"y": 237,
-						"width": 19,
-						"height": 14,
-						"originX": 0.526316,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "Particle_Debris",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "anim1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 10,
-					"sid": 950045813071779,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"Tint": {
-							"isEnabled": true,
-							"parameters": {
-								"color": [
-									0.007843137718737125,
-									0.003921568859368563,
-									0.0029411765281111,
-									1
-								]
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 950045813071779,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 419,
-						"y": 226,
-						"width": 11,
-						"height": 9,
-						"originX": 0.545455,
-						"originY": 0.555556,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "PowerUp",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "SpreadBeam",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11,
-					"sid": 831674956600954,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "vertical",
-								"wave": "sine",
-								"period": 1,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 3,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 0,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"Brightness": {
-							"isEnabled": true,
-							"parameters": {
-								"brightness": 1
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 831674956600954,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 414,
-						"y": 298,
-						"width": 20,
-						"height": 20,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "Player_Jets",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 12,
-					"sid": 406805292197168,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 406805292197168,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 526,
-						"y": 205,
-						"width": 11,
-						"height": 20,
-						"originX": 0.545455,
-						"originY": 0.05,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
 					"type": "Player_NormalBeam",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -298,7 +25,7 @@
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": 800,
+								"speed": 600,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -315,167 +42,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 509,
-						"y": 209,
+						"x": 264,
+						"y": 149,
 						"width": 12,
-						"height": 28,
+						"height": 45,
 						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "Player_SineBeam",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"sid": 586816117137370,
-					"tags": "",
-					"instanceVariables": {
-						"Strength": 3,
-						"Destroyed": false
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 600,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 0.5,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 60,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 586816117137370,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 515,
-						"y": 282,
-						"width": 15,
-						"height": 15,
-						"originX": 0.533333,
-						"originY": 0.533333,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "Player_SineBeam_Effect",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 15,
-					"sid": 880644197395820,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 880644197395820,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 502,
-						"y": 280,
-						"width": 15,
-						"height": 15,
-						"originX": 0.533333,
-						"originY": 0.533333,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "Player_SpreadBeam",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 16,
-					"sid": 823543255944093,
-					"tags": "",
-					"instanceVariables": {
-						"Strength": 1,
-						"Destroyed": false
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 800,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 823543255944093,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 498,
-						"y": 348,
-						"width": 8,
-						"height": 11,
-						"originX": 0.5,
-						"originY": 0.545455,
+						"originY": 0.4888888888888889,
 						"color": [
 							1,
 							1,
@@ -490,7 +62,7 @@
 					"type": "En_Bullet_1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -504,11 +76,11 @@
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": 100,
+								"speed": 200,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}
@@ -521,10 +93,156 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 525.3873291015625,
-						"y": 125.20044708251953,
-						"width": 28,
-						"height": 12,
+						"x": 246,
+						"y": 88,
+						"width": 12,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.5111111111111111,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Enemy_Red",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 8,
+					"sid": 242844348054689,
+					"tags": "",
+					"instanceVariables": {
+						"Activated": false,
+						"Activation_Coordinate": 0,
+						"Invulnerable": false,
+						"Shielded": false,
+						"Health": 0,
+						"Points": 0,
+						"Dying": false,
+						"Debris_RGB": "",
+						"BigDeathSequence": false,
+						"DropsItems": false,
+						"SpawnerUID": 0,
+						"ShootTimer": 0,
+						"TargetX": 0,
+						"TargetY": 0
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 242844348054689,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 87,
+						"y": 97,
+						"width": 82.60967900849641,
+						"height": 26.189119697454366,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 3.1532877623790445
+					}
+				},
+				{
+					"type": "Enemy_Blue",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"sid": 799357855311198,
+					"tags": "",
+					"instanceVariables": {
+						"Activated": false,
+						"Activation_Coordinate": 0,
+						"Invulnerable": false,
+						"Shielded": false,
+						"Health": 0,
+						"Points": 0,
+						"Dying": false,
+						"Debris_RGB": "",
+						"BigDeathSequence": false,
+						"DropsItems": false,
+						"SpawnerUID": 0,
+						"DashTimer": 0,
+						"IsDashing": false,
+						"NormalSpeed": 30,
+						"DashSpeed": 400,
+						"DashDuration": 0.3,
+						"DashCooldown": 2,
+						"TargetX": 0,
+						"TargetY": 0,
+						"CircleAngle": 0,
+						"IsCircling": false
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Brightness": {
+							"isEnabled": true,
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 799357855311198,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 142,
+						"y": 201,
+						"width": 34,
+						"height": 62,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -538,42 +256,28 @@
 					}
 				},
 				{
-					"type": "En_Bullet_3",
+					"type": "ShootExplosion",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "blow",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 22,
-					"sid": 231258757396391,
+					"uid": 10,
+					"sid": 270663810837890,
 					"tags": "",
-					"instanceVariables": {
-						"Strength": 0
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 240,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
+					"instanceVariables": {},
+					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 231258757396391,
+						"sid": 270663810837890,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 484.8656311035156,
-						"y": 158.0037384033203,
+						"x": 246,
+						"y": 213,
 						"width": 14,
 						"height": 14,
 						"originX": 0.5,
@@ -589,44 +293,30 @@
 					}
 				},
 				{
-					"type": "En_Bullet_4",
+					"type": "EnemyShootExplosion",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "blow",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 23,
-					"sid": 695738484976992,
+					"uid": 11,
+					"sid": 520781312177578,
 					"tags": "",
-					"instanceVariables": {
-						"Strength": 0
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 320,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
+					"instanceVariables": {},
+					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 695738484976992,
+						"sid": 520781312177578,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 423.1182861328125,
-						"y": 158.96853637695312,
-						"width": 6,
-						"height": 24,
+						"x": 277.900146484375,
+						"y": 203.0552978515625,
+						"width": 14,
+						"height": 14,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -640,22 +330,22 @@
 					}
 				},
 				{
-					"type": "En_Bullet_5",
+					"type": "pile",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 24,
-					"sid": 945705860328503,
+					"uid": 12,
+					"sid": 174926449119322,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": 320,
+								"speed": 50,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -666,130 +356,18 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 945705860328503,
+						"sid": 174926449119322,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 371.0189208984375,
-						"y": 163.79254150390625,
-						"width": 4,
-						"height": 22,
+						"x": 282.2756042480469,
+						"y": 110.62499237060547,
+						"width": 15,
+						"height": 25.5,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "En_Bullet_6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 25,
-					"sid": 533959469211981,
-					"tags": "",
-					"instanceVariables": {
-						"Strength": 0
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 160,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": true
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 2,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": false,
-								"live-preview": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 533959469211981,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 433.7759704589844,
-						"y": 222.9809112548828,
-						"width": 15,
-						"height": 15,
-						"originX": 0.533333,
-						"originY": 0.533333,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "En_Laser",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 26,
-					"sid": 383210138100070,
-					"tags": "",
-					"instanceVariables": {
-						"Strength": 0,
-						"Timer": 0,
-						"SweepDirection": ""
-					},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 383210138100070,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 542.7986450195312,
-						"y": 241.31216430664062,
-						"width": 15,
-						"height": 15,
-						"originX": 0,
-						"originY": 0.466667,
 						"color": [
 							1,
 							1,
@@ -837,7 +415,16 @@
 		"subfolders": []
 	},
 	"sid": 726767599921830,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "Data",
+			"properties": {},
+			"uid": 5,
+			"sid": 304604998267348,
+			"tags": "",
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 720,
 	"height": 960,
