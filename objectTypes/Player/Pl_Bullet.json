@@ -1,0 +1,212 @@
+{
+	"name": "Pl_Bullet",
+	"plugin-id": "Sprite",
+	"sid": 551939654654996,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 657743490762036
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 12,
+						"height": 45,
+						"originX": 0.5,
+						"originY": 0.4888888888888889,
+						"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\BundleGames\\Shmup\\Graphics\\bullets\\bullet_player_1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9846922,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.023806666666666604,
+								0,
+								1,
+								0,
+								1,
+								0.41185777777777777,
+								1,
+								0.9347339682539684,
+								0.023806666666666604,
+								1,
+								0,
+								0.9347339682539684,
+								0,
+								0.41185777777777777
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ImpactPoint",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 12,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 0.4888888888888889,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8620843,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.021739130434782608,
+								0.6666666666666666,
+								0.021739130434782608,
+								0.8333333333333334,
+								0.06521739130434782,
+								0.9166666666666666,
+								0.10869565217391304,
+								0.9166666666666666,
+								0.5869565217391305,
+								0.5,
+								0.9782608695652174,
+								0.4166666666666667,
+								0.9347826086956522,
+								0.08333333333333333,
+								0.5869565217391305,
+								0.08333333333333333,
+								0.10869565217391304,
+								0.16666666666666666,
+								0.06521739130434782
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ImpactPoint",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 12,
+						"height": 47,
+						"originX": 0.5,
+						"originY": 0.4888888888888889,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2861186,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.02127659574468085,
+								0.6666666666666666,
+								0.02127659574468085,
+								0.8333333333333334,
+								0.06382978723404255,
+								0.9166666666666666,
+								0.10638297872340426,
+								0.9166666666666666,
+								0.5957446808510638,
+								0.5,
+								0.9787234042553191,
+								0.4166666666666667,
+								0.9361702127659575,
+								0.08333333333333333,
+								0.574468085106383,
+								0.08333333333333333,
+								0.10638297872340426,
+								0.16666666666666666,
+								0.06382978723404255
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ImpactPoint",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 14,
+						"height": 47,
+						"originX": 0.5,
+						"originY": 0.4888888888888889,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2128166,
+						"collisionPoly": {
+							"points": [
+								0.35714285714285715,
+								0.02127659574468085,
+								0.6428571428571429,
+								0.02127659574468085,
+								0.7857142857142857,
+								0.06382978723404255,
+								0.8571428571428571,
+								0.10638297872340426,
+								0.9285714285714286,
+								0.44680851063829785,
+								0.9285714285714286,
+								0.5319148936170214,
+								0.5,
+								0.9787234042553191,
+								0.35714285714285715,
+								0.8723404255319149,
+								0.07142857142857142,
+								0.5106382978723404,
+								0.07142857142857142,
+								0.425531914893617,
+								0.14285714285714285,
+								0.10638297872340426,
+								0.21428571428571427,
+								0.06382978723404255
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "ImpactPoint",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 856237449562317,
+				"name": "idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

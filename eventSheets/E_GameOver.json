@@ -1,0 +1,150 @@
+{
+	"name": "E_GameOver",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 299047395173798,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Yes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 572255013489168,
+					"parameters": {
+						"layout": "Game"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 646699812252042,
+					"parameters": {
+						"reset-static": true
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 278306452011106
+				}
+			],
+			"sid": 316795242803498
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 148248189453335,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "No"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 302169307968404,
+					"parameters": {
+						"layout": "Menu"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 311693957091859,
+					"parameters": {
+						"reset-static": true
+					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 369197293480447
+				}
+			],
+			"sid": 499371056050511
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Background4",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 939691495401182
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Background",
+							"sid": 504477583280998,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Self.ScrollSpeed"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Background",
+							"sid": 959419468187643,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "90"
+							}
+						}
+					],
+					"sid": 808047162272192
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Background",
+							"sid": 484757795478285,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "LayoutHeight + Self.Height / 2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Background",
+							"sid": 703572060957870,
+							"parameters": {
+								"y": "Self.Y - Self.Height * 2"
+							}
+						}
+					],
+					"sid": 906094299366934
+				}
+			],
+			"sid": 482457909139457
+		}
+	],
+	"sid": 348063102053930
+}

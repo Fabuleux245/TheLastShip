@@ -21,6 +21,6 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"Player_NormalBeam"
+		"Pl_Bullet"
 	]
 }

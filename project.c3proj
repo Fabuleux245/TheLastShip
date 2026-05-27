@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 47604,
+	"savedWithRelease": 48700,
 	"name": "kikioi",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -38,6 +38,13 @@
 			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -98,20 +105,30 @@
 			"Transition",
 			"Text",
 			"Light",
-			"Batterybarre",
-			"pile",
+			"Batterybar",
+			"Battery",
 			"BoutonJouer",
-			"Sprite",
+			"FondUI",
 			"Browser",
-			"BatteryDanger"
+			"BatteryDanger",
+			"Logo",
+			"Start",
+			"Shield",
+			"Explosion",
+			"GameOver",
+			"Restart",
+			"Yes",
+			"No",
+			"VicotryBack",
+			"Victory"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"En_Bullet_1",
-					"Enemy_Red",
-					"En_Asteroid",
-					"Enemy_Blue",
+					"En_Bullet",
+					"Watcher",
+					"Asteroid",
+					"Crawler",
 					"EnemySpawner",
 					"EnemyShootExplosion",
 					"EnemySpawner2"
@@ -122,7 +139,7 @@
 			{
 				"items": [
 					"Player",
-					"Player_NormalBeam",
+					"Pl_Bullet",
 					"ShootExplosion"
 				],
 				"subfolders": [],
@@ -134,7 +151,8 @@
 					"Audio",
 					"Data",
 					"Generic_Controller",
-					"Keyboard"
+					"Keyboard",
+					"Mouse"
 				],
 				"subfolders": [],
 				"name": "System"
@@ -154,18 +172,18 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 2",
-			"Layout 3",
+			"BackLayout",
+			"GameOver",
 			"Menu",
-			"NIveau2"
+			"Game"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"eMain",
-			"Menu",
-			"Event sheet 3"
+			"E_GameOver",
+			"E_Menu",
+			"E_Game"
 		],
 		"subfolders": []
 	},
@@ -177,7 +195,7 @@
 		"sound": {
 			"items": [
 				{
-					"name": "freesound_community-space-adventure-29296.webm",
+					"name": "music.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 512524744765507,
 					"file-info": {
@@ -185,7 +203,7 @@
 					}
 				},
 				{
-					"name": "Shoot Laser Player.webm",
+					"name": "player_shoot.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 607855733626812,
 					"file-info": {
@@ -193,15 +211,7 @@
 					}
 				},
 				{
-					"name": "Ennemi Shoot7.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 352524020096803,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "667650__deltacode__weapon_laser1.webm",
+					"name": "enemy_shoot.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 940015654529774,
 					"file-info": {
@@ -236,6 +246,62 @@
 					"name": "menu.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 580952395497289,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shield_down.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 844478474411016,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shield_up.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 609866510705958,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "enemy_detected.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 776444792075893,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "out_of_battery.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 832024060165264,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "battery_collected.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 359387303155999,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "explosion.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 257643863739985,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "victory.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 503716034921385,
 					"file-info": {
 						"purpose": "none"
 					}

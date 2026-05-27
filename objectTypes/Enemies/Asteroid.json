@@ -1,0 +1,54 @@
+{
+	"name": "Asteroid",
+	"plugin-id": "Sprite",
+	"sid": 492301878445519,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "RotateDirection",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 102228138136906
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 329492422605093
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 39,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\BundleGames\\Shmup\\Graphics\\enemies\\meteor_big.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6777970,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 737500364561119,
+				"name": "idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 1
+			}
+		],
+		"subfolders": []
+	}
+}

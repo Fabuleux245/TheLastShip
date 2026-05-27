@@ -95,7 +95,7 @@
 		}
 	],
 	"members": [
-		"Enemy_Red",
-		"Enemy_Blue"
+		"Watcher",
+		"Crawler"
 	]
 }

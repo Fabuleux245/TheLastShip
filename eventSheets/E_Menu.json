@@ -1,0 +1,128 @@
+{
+	"name": "E_Menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 610268536003473,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 897938855864610
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 485218907435801,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 110434131158548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 123516674876540
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 629966789239521,
+					"parameters": {
+						"audio-file": {
+							"path": "menu"
+						},
+						"loop": "looping",
+						"volume": "10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 615340313878196
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Background3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 288368752719251
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Background",
+							"sid": 996283057285047,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "Self.ScrollSpeed"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Background",
+							"sid": 799622252026921,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "90"
+							}
+						}
+					],
+					"sid": 167037536880441
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "Background",
+							"sid": 854929221682013,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "LayoutHeight + Self.Height / 2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "Background",
+							"sid": 400443117607201,
+							"parameters": {
+								"y": "Self.Y - Self.Height * 2"
+							}
+						}
+					],
+					"sid": 322562535568289
+				}
+			],
+			"sid": 980024947414231
+		}
+	],
+	"sid": 505064327228142
+}

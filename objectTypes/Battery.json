@@ -1,0 +1,62 @@
+{
+	"name": "Battery",
+	"plugin-id": "Sprite",
+	"sid": 811586579531584,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 293676666392149
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9615341,
+						"collisionPoly": {
+							"points": [
+								0.303175879396985,
+								0.1874879028561145,
+								0.6376482412060301,
+								0.1874879028561145,
+								0.8357587939698494,
+								0.24225358330135727,
+								0.8048844221105529,
+								0.822074358808928,
+								0.1076381909547739,
+								0.8107735041138779,
+								0.13593969849246235,
+								0.2309527286063071
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 203405791208628,
+				"name": "idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

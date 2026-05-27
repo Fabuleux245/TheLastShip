@@ -20,7 +20,7 @@
 			"sid": 895713297023054
 		},
 		{
-			"name": "BeamSide",
+			"name": "CanShoot",
 			"type": "boolean",
 			"desc": "",
 			"show": true,
