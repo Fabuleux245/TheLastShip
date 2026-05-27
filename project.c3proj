@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 48700,
-	"name": "kikioi",
+	"name": "TheLastShip",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -172,10 +172,10 @@
 	},
 	"layouts": {
 		"items": [
-			"BackLayout",
-			"GameOver",
 			"Menu",
-			"Game"
+			"Game",
+			"GameOver",
+			"BackLayout"
 		],
 		"subfolders": []
 	},
@@ -461,5 +461,5 @@
 	},
 	"viewportWidth": 360,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "Menu"
 }
